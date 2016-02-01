@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0710"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8706755F1C06245E00940D6E"
-               BuildableName = "AppCelularRegistrado.app"
-               BlueprintName = "AppCelularRegistrado"
-               ReferencedContainer = "container:AppCelularRegistrado.xcodeproj">
+               BlueprintIdentifier = "87EC8D141C5F69FF00D564FB"
+               BuildableName = "appCelularRegistrado.app"
+               BlueprintName = "appCelularRegistrado"
+               ReferencedContainer = "container:appCelularRegistrado.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "870675731C06245E00940D6E"
-               BuildableName = "AppCelularRegistradoTests.xctest"
-               BlueprintName = "AppCelularRegistradoTests"
-               ReferencedContainer = "container:AppCelularRegistrado.xcodeproj">
+               BlueprintIdentifier = "87EC8D281C5F6A0000D564FB"
+               BuildableName = "appCelularRegistradoTests.xctest"
+               BlueprintName = "appCelularRegistradoTests"
+               ReferencedContainer = "container:appCelularRegistrado.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8706757E1C06245E00940D6E"
-               BuildableName = "AppCelularRegistradoUITests.xctest"
-               BlueprintName = "AppCelularRegistradoUITests"
-               ReferencedContainer = "container:AppCelularRegistrado.xcodeproj">
+               BlueprintIdentifier = "87EC8D331C5F6A0000D564FB"
+               BuildableName = "appCelularRegistradoUITests.xctest"
+               BlueprintName = "appCelularRegistradoUITests"
+               ReferencedContainer = "container:appCelularRegistrado.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8706755F1C06245E00940D6E"
-            BuildableName = "AppCelularRegistrado.app"
-            BlueprintName = "AppCelularRegistrado"
-            ReferencedContainer = "container:AppCelularRegistrado.xcodeproj">
+            BlueprintIdentifier = "87EC8D141C5F69FF00D564FB"
+            BuildableName = "appCelularRegistrado.app"
+            BlueprintName = "appCelularRegistrado"
+            ReferencedContainer = "container:appCelularRegistrado.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8706755F1C06245E00940D6E"
-            BuildableName = "AppCelularRegistrado.app"
-            BlueprintName = "AppCelularRegistrado"
-            ReferencedContainer = "container:AppCelularRegistrado.xcodeproj">
+            BlueprintIdentifier = "87EC8D141C5F69FF00D564FB"
+            BuildableName = "appCelularRegistrado.app"
+            BlueprintName = "appCelularRegistrado"
+            ReferencedContainer = "container:appCelularRegistrado.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8706755F1C06245E00940D6E"
-            BuildableName = "AppCelularRegistrado.app"
-            BlueprintName = "AppCelularRegistrado"
-            ReferencedContainer = "container:AppCelularRegistrado.xcodeproj">
+            BlueprintIdentifier = "87EC8D141C5F69FF00D564FB"
+            BuildableName = "appCelularRegistrado.app"
+            BlueprintName = "appCelularRegistrado"
+            ReferencedContainer = "container:appCelularRegistrado.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

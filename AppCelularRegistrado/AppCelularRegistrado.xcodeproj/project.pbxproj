@@ -7,69 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E4503F7F51B64189490425C /* Pods_AppCelularRegistrado.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024ADAE53D7E466AA10B6428 /* Pods_AppCelularRegistrado.framework */; };
-		870675641C06245E00940D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870675631C06245E00940D6E /* AppDelegate.swift */; };
-		870675661C06245E00940D6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870675651C06245E00940D6E /* ViewController.swift */; };
-		870675691C06245E00940D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870675671C06245E00940D6E /* Main.storyboard */; };
-		8706756B1C06245E00940D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8706756A1C06245E00940D6E /* Assets.xcassets */; };
-		8706756E1C06245E00940D6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8706756C1C06245E00940D6E /* LaunchScreen.storyboard */; };
-		870675791C06245E00940D6E /* AppCelularRegistradoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870675781C06245E00940D6E /* AppCelularRegistradoTests.swift */; };
-		870675841C06245E00940D6E /* AppCelularRegistradoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870675831C06245E00940D6E /* AppCelularRegistradoUITests.swift */; };
+		41869B64D3035BB9CB88BFF5 /* Pods_appCelularRegistrado.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A09DCB6C1EBB3100752BF07 /* Pods_appCelularRegistrado.framework */; };
+		878B696C1C5F748A00FC4BA2 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B696B1C5F748A00FC4BA2 /* QRCodeViewController.swift */; };
+		878B696E1C5F9DA000FC4BA2 /* InforImeiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B696D1C5F9DA000FC4BA2 /* InforImeiController.swift */; };
+		87EC8D191C5F69FF00D564FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC8D181C5F69FF00D564FB /* AppDelegate.swift */; };
+		87EC8D1B1C5F69FF00D564FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC8D1A1C5F69FF00D564FB /* ViewController.swift */; };
+		87EC8D1E1C5F69FF00D564FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EC8D1C1C5F69FF00D564FB /* Main.storyboard */; };
+		87EC8D201C5F69FF00D564FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87EC8D1F1C5F69FF00D564FB /* Assets.xcassets */; };
+		87EC8D231C5F69FF00D564FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EC8D211C5F69FF00D564FB /* LaunchScreen.storyboard */; };
+		87EC8D2E1C5F6A0000D564FB /* appCelularRegistradoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC8D2D1C5F6A0000D564FB /* appCelularRegistradoTests.swift */; };
+		87EC8D391C5F6A0000D564FB /* appCelularRegistradoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC8D381C5F6A0000D564FB /* appCelularRegistradoUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		870675751C06245E00940D6E /* PBXContainerItemProxy */ = {
+		87EC8D2A1C5F6A0000D564FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 870675581C06245E00940D6E /* Project object */;
+			containerPortal = 87EC8D0D1C5F69FF00D564FB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8706755F1C06245E00940D6E;
-			remoteInfo = AppCelularRegistrado;
+			remoteGlobalIDString = 87EC8D141C5F69FF00D564FB;
+			remoteInfo = appCelularRegistrado;
 		};
-		870675801C06245E00940D6E /* PBXContainerItemProxy */ = {
+		87EC8D351C5F6A0000D564FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 870675581C06245E00940D6E /* Project object */;
+			containerPortal = 87EC8D0D1C5F69FF00D564FB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8706755F1C06245E00940D6E;
-			remoteInfo = AppCelularRegistrado;
+			remoteGlobalIDString = 87EC8D141C5F69FF00D564FB;
+			remoteInfo = appCelularRegistrado;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		024ADAE53D7E466AA10B6428 /* Pods_AppCelularRegistrado.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppCelularRegistrado.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3711A5959DE8F7C42BD081A4 /* Pods-AppCelularRegistrado.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCelularRegistrado.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppCelularRegistrado/Pods-AppCelularRegistrado.debug.xcconfig"; sourceTree = "<group>"; };
-		870675601C06245E00940D6E /* AppCelularRegistrado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCelularRegistrado.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		870675631C06245E00940D6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		870675651C06245E00940D6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		870675681C06245E00940D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8706756A1C06245E00940D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8706756D1C06245E00940D6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8706756F1C06245E00940D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		870675741C06245E00940D6E /* AppCelularRegistradoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCelularRegistradoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		870675781C06245E00940D6E /* AppCelularRegistradoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCelularRegistradoTests.swift; sourceTree = "<group>"; };
-		8706757A1C06245E00940D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8706757F1C06245E00940D6E /* AppCelularRegistradoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCelularRegistradoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		870675831C06245E00940D6E /* AppCelularRegistradoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCelularRegistradoUITests.swift; sourceTree = "<group>"; };
-		870675851C06245E00940D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCBC423AA5314AB4103766F4 /* Pods-AppCelularRegistrado.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCelularRegistrado.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppCelularRegistrado/Pods-AppCelularRegistrado.release.xcconfig"; sourceTree = "<group>"; };
+		6A09DCB6C1EBB3100752BF07 /* Pods_appCelularRegistrado.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appCelularRegistrado.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		878B696B1C5F748A00FC4BA2 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		878B696D1C5F9DA000FC4BA2 /* InforImeiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InforImeiController.swift; sourceTree = "<group>"; };
+		87EC8D151C5F69FF00D564FB /* appCelularRegistrado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appCelularRegistrado.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EC8D181C5F69FF00D564FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87EC8D1A1C5F69FF00D564FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87EC8D1D1C5F69FF00D564FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87EC8D1F1C5F69FF00D564FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87EC8D221C5F69FF00D564FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87EC8D241C5F69FF00D564FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EC8D291C5F6A0000D564FB /* appCelularRegistradoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appCelularRegistradoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EC8D2D1C5F6A0000D564FB /* appCelularRegistradoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appCelularRegistradoTests.swift; sourceTree = "<group>"; };
+		87EC8D2F1C5F6A0000D564FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EC8D341C5F6A0000D564FB /* appCelularRegistradoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appCelularRegistradoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EC8D381C5F6A0000D564FB /* appCelularRegistradoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appCelularRegistradoUITests.swift; sourceTree = "<group>"; };
+		87EC8D3A1C5F6A0000D564FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C80B3D0FF61D5242322C04C6 /* Pods-appCelularRegistrado.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appCelularRegistrado.debug.xcconfig"; path = "Pods/Target Support Files/Pods-appCelularRegistrado/Pods-appCelularRegistrado.debug.xcconfig"; sourceTree = "<group>"; };
+		EBC0EDEDE4B05F72AE747E8E /* Pods-appCelularRegistrado.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appCelularRegistrado.release.xcconfig"; path = "Pods/Target Support Files/Pods-appCelularRegistrado/Pods-appCelularRegistrado.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8706755D1C06245E00940D6E /* Frameworks */ = {
+		87EC8D121C5F69FF00D564FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E4503F7F51B64189490425C /* Pods_AppCelularRegistrado.framework in Frameworks */,
+				41869B64D3035BB9CB88BFF5 /* Pods_appCelularRegistrado.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		870675711C06245E00940D6E /* Frameworks */ = {
+		87EC8D261C5F6A0000D564FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8706757C1C06245E00940D6E /* Frameworks */ = {
+		87EC8D311C5F6A0000D564FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,159 +83,169 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		870675571C06245E00940D6E = {
+		0FA341323F0C1D619182B870 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				870675621C06245E00940D6E /* AppCelularRegistrado */,
-				870675771C06245E00940D6E /* AppCelularRegistradoTests */,
-				870675821C06245E00940D6E /* AppCelularRegistradoUITests */,
-				870675611C06245E00940D6E /* Products */,
-				F2D4F08331C0F5A2AF7247D2 /* Pods */,
-				AE0EC0D2013FF4023D35374D /* Frameworks */,
+				C80B3D0FF61D5242322C04C6 /* Pods-appCelularRegistrado.debug.xcconfig */,
+				EBC0EDEDE4B05F72AE747E8E /* Pods-appCelularRegistrado.release.xcconfig */,
 			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		870675611C06245E00940D6E /* Products */ = {
+		63A3C7F2D588D3588E1652BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				870675601C06245E00940D6E /* AppCelularRegistrado.app */,
-				870675741C06245E00940D6E /* AppCelularRegistradoTests.xctest */,
-				8706757F1C06245E00940D6E /* AppCelularRegistradoUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		870675621C06245E00940D6E /* AppCelularRegistrado */ = {
-			isa = PBXGroup;
-			children = (
-				870675631C06245E00940D6E /* AppDelegate.swift */,
-				870675651C06245E00940D6E /* ViewController.swift */,
-				870675671C06245E00940D6E /* Main.storyboard */,
-				8706756A1C06245E00940D6E /* Assets.xcassets */,
-				8706756C1C06245E00940D6E /* LaunchScreen.storyboard */,
-				8706756F1C06245E00940D6E /* Info.plist */,
-			);
-			path = AppCelularRegistrado;
-			sourceTree = "<group>";
-		};
-		870675771C06245E00940D6E /* AppCelularRegistradoTests */ = {
-			isa = PBXGroup;
-			children = (
-				870675781C06245E00940D6E /* AppCelularRegistradoTests.swift */,
-				8706757A1C06245E00940D6E /* Info.plist */,
-			);
-			path = AppCelularRegistradoTests;
-			sourceTree = "<group>";
-		};
-		870675821C06245E00940D6E /* AppCelularRegistradoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				870675831C06245E00940D6E /* AppCelularRegistradoUITests.swift */,
-				870675851C06245E00940D6E /* Info.plist */,
-			);
-			path = AppCelularRegistradoUITests;
-			sourceTree = "<group>";
-		};
-		AE0EC0D2013FF4023D35374D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				024ADAE53D7E466AA10B6428 /* Pods_AppCelularRegistrado.framework */,
+				6A09DCB6C1EBB3100752BF07 /* Pods_appCelularRegistrado.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F2D4F08331C0F5A2AF7247D2 /* Pods */ = {
+		878B696A1C5F746F00FC4BA2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3711A5959DE8F7C42BD081A4 /* Pods-AppCelularRegistrado.debug.xcconfig */,
-				DCBC423AA5314AB4103766F4 /* Pods-AppCelularRegistrado.release.xcconfig */,
+				878B696B1C5F748A00FC4BA2 /* QRCodeViewController.swift */,
+				878B696D1C5F9DA000FC4BA2 /* InforImeiController.swift */,
 			);
-			name = Pods;
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		87EC8D0C1C5F69FF00D564FB = {
+			isa = PBXGroup;
+			children = (
+				878B696A1C5F746F00FC4BA2 /* Controller */,
+				87EC8D171C5F69FF00D564FB /* appCelularRegistrado */,
+				87EC8D2C1C5F6A0000D564FB /* appCelularRegistradoTests */,
+				87EC8D371C5F6A0000D564FB /* appCelularRegistradoUITests */,
+				87EC8D161C5F69FF00D564FB /* Products */,
+				0FA341323F0C1D619182B870 /* Pods */,
+				63A3C7F2D588D3588E1652BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87EC8D161C5F69FF00D564FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87EC8D151C5F69FF00D564FB /* appCelularRegistrado.app */,
+				87EC8D291C5F6A0000D564FB /* appCelularRegistradoTests.xctest */,
+				87EC8D341C5F6A0000D564FB /* appCelularRegistradoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87EC8D171C5F69FF00D564FB /* appCelularRegistrado */ = {
+			isa = PBXGroup;
+			children = (
+				87EC8D181C5F69FF00D564FB /* AppDelegate.swift */,
+				87EC8D1A1C5F69FF00D564FB /* ViewController.swift */,
+				87EC8D1C1C5F69FF00D564FB /* Main.storyboard */,
+				87EC8D1F1C5F69FF00D564FB /* Assets.xcassets */,
+				87EC8D211C5F69FF00D564FB /* LaunchScreen.storyboard */,
+				87EC8D241C5F69FF00D564FB /* Info.plist */,
+			);
+			path = appCelularRegistrado;
+			sourceTree = "<group>";
+		};
+		87EC8D2C1C5F6A0000D564FB /* appCelularRegistradoTests */ = {
+			isa = PBXGroup;
+			children = (
+				87EC8D2D1C5F6A0000D564FB /* appCelularRegistradoTests.swift */,
+				87EC8D2F1C5F6A0000D564FB /* Info.plist */,
+			);
+			path = appCelularRegistradoTests;
+			sourceTree = "<group>";
+		};
+		87EC8D371C5F6A0000D564FB /* appCelularRegistradoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87EC8D381C5F6A0000D564FB /* appCelularRegistradoUITests.swift */,
+				87EC8D3A1C5F6A0000D564FB /* Info.plist */,
+			);
+			path = appCelularRegistradoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8706755F1C06245E00940D6E /* AppCelularRegistrado */ = {
+		87EC8D141C5F69FF00D564FB /* appCelularRegistrado */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 870675881C06245E00940D6E /* Build configuration list for PBXNativeTarget "AppCelularRegistrado" */;
+			buildConfigurationList = 87EC8D3D1C5F6A0000D564FB /* Build configuration list for PBXNativeTarget "appCelularRegistrado" */;
 			buildPhases = (
-				D98B9FB670C7AA70ECB9E7FF /* Check Pods Manifest.lock */,
-				8706755C1C06245E00940D6E /* Sources */,
-				8706755D1C06245E00940D6E /* Frameworks */,
-				8706755E1C06245E00940D6E /* Resources */,
-				BA05767D40178C2D9109160D /* Embed Pods Frameworks */,
-				FB82F00367BBF02BACE1A4CD /* Copy Pods Resources */,
+				26846CADB58586BB09B16BBC /* Check Pods Manifest.lock */,
+				87EC8D111C5F69FF00D564FB /* Sources */,
+				87EC8D121C5F69FF00D564FB /* Frameworks */,
+				87EC8D131C5F69FF00D564FB /* Resources */,
+				6D7BCF99826BAFC78FD399A2 /* Embed Pods Frameworks */,
+				FB77BAC6960D68C492699A9E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AppCelularRegistrado;
-			productName = AppCelularRegistrado;
-			productReference = 870675601C06245E00940D6E /* AppCelularRegistrado.app */;
+			name = appCelularRegistrado;
+			productName = appCelularRegistrado;
+			productReference = 87EC8D151C5F69FF00D564FB /* appCelularRegistrado.app */;
 			productType = "com.apple.product-type.application";
 		};
-		870675731C06245E00940D6E /* AppCelularRegistradoTests */ = {
+		87EC8D281C5F6A0000D564FB /* appCelularRegistradoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8706758B1C06245E00940D6E /* Build configuration list for PBXNativeTarget "AppCelularRegistradoTests" */;
+			buildConfigurationList = 87EC8D401C5F6A0000D564FB /* Build configuration list for PBXNativeTarget "appCelularRegistradoTests" */;
 			buildPhases = (
-				870675701C06245E00940D6E /* Sources */,
-				870675711C06245E00940D6E /* Frameworks */,
-				870675721C06245E00940D6E /* Resources */,
+				87EC8D251C5F6A0000D564FB /* Sources */,
+				87EC8D261C5F6A0000D564FB /* Frameworks */,
+				87EC8D271C5F6A0000D564FB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				870675761C06245E00940D6E /* PBXTargetDependency */,
+				87EC8D2B1C5F6A0000D564FB /* PBXTargetDependency */,
 			);
-			name = AppCelularRegistradoTests;
-			productName = AppCelularRegistradoTests;
-			productReference = 870675741C06245E00940D6E /* AppCelularRegistradoTests.xctest */;
+			name = appCelularRegistradoTests;
+			productName = appCelularRegistradoTests;
+			productReference = 87EC8D291C5F6A0000D564FB /* appCelularRegistradoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8706757E1C06245E00940D6E /* AppCelularRegistradoUITests */ = {
+		87EC8D331C5F6A0000D564FB /* appCelularRegistradoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8706758E1C06245E00940D6E /* Build configuration list for PBXNativeTarget "AppCelularRegistradoUITests" */;
+			buildConfigurationList = 87EC8D431C5F6A0000D564FB /* Build configuration list for PBXNativeTarget "appCelularRegistradoUITests" */;
 			buildPhases = (
-				8706757B1C06245E00940D6E /* Sources */,
-				8706757C1C06245E00940D6E /* Frameworks */,
-				8706757D1C06245E00940D6E /* Resources */,
+				87EC8D301C5F6A0000D564FB /* Sources */,
+				87EC8D311C5F6A0000D564FB /* Frameworks */,
+				87EC8D321C5F6A0000D564FB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				870675811C06245E00940D6E /* PBXTargetDependency */,
+				87EC8D361C5F6A0000D564FB /* PBXTargetDependency */,
 			);
-			name = AppCelularRegistradoUITests;
-			productName = AppCelularRegistradoUITests;
-			productReference = 8706757F1C06245E00940D6E /* AppCelularRegistradoUITests.xctest */;
+			name = appCelularRegistradoUITests;
+			productName = appCelularRegistradoUITests;
+			productReference = 87EC8D341C5F6A0000D564FB /* appCelularRegistradoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		870675581C06245E00940D6E /* Project object */ = {
+		87EC8D0D1C5F69FF00D564FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = celularegistrado.com.br;
 				TargetAttributes = {
-					8706755F1C06245E00940D6E = {
-						CreatedOnToolsVersion = 7.1.1;
+					87EC8D141C5F69FF00D564FB = {
+						CreatedOnToolsVersion = 7.2;
 					};
-					870675731C06245E00940D6E = {
-						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = 8706755F1C06245E00940D6E;
+					87EC8D281C5F6A0000D564FB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 87EC8D141C5F69FF00D564FB;
 					};
-					8706757E1C06245E00940D6E = {
-						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = 8706755F1C06245E00940D6E;
+					87EC8D331C5F6A0000D564FB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 87EC8D141C5F69FF00D564FB;
 					};
 				};
 			};
-			buildConfigurationList = 8706755B1C06245E00940D6E /* Build configuration list for PBXProject "AppCelularRegistrado" */;
+			buildConfigurationList = 87EC8D101C5F69FF00D564FB /* Build configuration list for PBXProject "appCelularRegistrado" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,37 +253,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 870675571C06245E00940D6E;
-			productRefGroup = 870675611C06245E00940D6E /* Products */;
+			mainGroup = 87EC8D0C1C5F69FF00D564FB;
+			productRefGroup = 87EC8D161C5F69FF00D564FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8706755F1C06245E00940D6E /* AppCelularRegistrado */,
-				870675731C06245E00940D6E /* AppCelularRegistradoTests */,
-				8706757E1C06245E00940D6E /* AppCelularRegistradoUITests */,
+				87EC8D141C5F69FF00D564FB /* appCelularRegistrado */,
+				87EC8D281C5F6A0000D564FB /* appCelularRegistradoTests */,
+				87EC8D331C5F6A0000D564FB /* appCelularRegistradoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8706755E1C06245E00940D6E /* Resources */ = {
+		87EC8D131C5F69FF00D564FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8706756E1C06245E00940D6E /* LaunchScreen.storyboard in Resources */,
-				8706756B1C06245E00940D6E /* Assets.xcassets in Resources */,
-				870675691C06245E00940D6E /* Main.storyboard in Resources */,
+				87EC8D231C5F69FF00D564FB /* LaunchScreen.storyboard in Resources */,
+				87EC8D201C5F69FF00D564FB /* Assets.xcassets in Resources */,
+				87EC8D1E1C5F69FF00D564FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		870675721C06245E00940D6E /* Resources */ = {
+		87EC8D271C5F6A0000D564FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8706757D1C06245E00940D6E /* Resources */ = {
+		87EC8D321C5F6A0000D564FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,22 +293,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BA05767D40178C2D9109160D /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppCelularRegistrado/Pods-AppCelularRegistrado-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D98B9FB670C7AA70ECB9E7FF /* Check Pods Manifest.lock */ = {
+		26846CADB58586BB09B16BBC /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,7 +308,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FB82F00367BBF02BACE1A4CD /* Copy Pods Resources */ = {
+		6D7BCF99826BAFC78FD399A2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-appCelularRegistrado/Pods-appCelularRegistrado-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB77BAC6960D68C492699A9E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,65 +335,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppCelularRegistrado/Pods-AppCelularRegistrado-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-appCelularRegistrado/Pods-appCelularRegistrado-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8706755C1C06245E00940D6E /* Sources */ = {
+		87EC8D111C5F69FF00D564FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870675661C06245E00940D6E /* ViewController.swift in Sources */,
-				870675641C06245E00940D6E /* AppDelegate.swift in Sources */,
+				878B696C1C5F748A00FC4BA2 /* QRCodeViewController.swift in Sources */,
+				87EC8D1B1C5F69FF00D564FB /* ViewController.swift in Sources */,
+				878B696E1C5F9DA000FC4BA2 /* InforImeiController.swift in Sources */,
+				87EC8D191C5F69FF00D564FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		870675701C06245E00940D6E /* Sources */ = {
+		87EC8D251C5F6A0000D564FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870675791C06245E00940D6E /* AppCelularRegistradoTests.swift in Sources */,
+				87EC8D2E1C5F6A0000D564FB /* appCelularRegistradoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8706757B1C06245E00940D6E /* Sources */ = {
+		87EC8D301C5F6A0000D564FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870675841C06245E00940D6E /* AppCelularRegistradoUITests.swift in Sources */,
+				87EC8D391C5F6A0000D564FB /* appCelularRegistradoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		870675761C06245E00940D6E /* PBXTargetDependency */ = {
+		87EC8D2B1C5F6A0000D564FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8706755F1C06245E00940D6E /* AppCelularRegistrado */;
-			targetProxy = 870675751C06245E00940D6E /* PBXContainerItemProxy */;
+			target = 87EC8D141C5F69FF00D564FB /* appCelularRegistrado */;
+			targetProxy = 87EC8D2A1C5F6A0000D564FB /* PBXContainerItemProxy */;
 		};
-		870675811C06245E00940D6E /* PBXTargetDependency */ = {
+		87EC8D361C5F6A0000D564FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8706755F1C06245E00940D6E /* AppCelularRegistrado */;
-			targetProxy = 870675801C06245E00940D6E /* PBXContainerItemProxy */;
+			target = 87EC8D141C5F69FF00D564FB /* appCelularRegistrado */;
+			targetProxy = 87EC8D351C5F6A0000D564FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		870675671C06245E00940D6E /* Main.storyboard */ = {
+		87EC8D1C1C5F69FF00D564FB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				870675681C06245E00940D6E /* Base */,
+				87EC8D1D1C5F69FF00D564FB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8706756C1C06245E00940D6E /* LaunchScreen.storyboard */ = {
+		87EC8D211C5F69FF00D564FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8706756D1C06245E00940D6E /* Base */,
+				87EC8D221C5F69FF00D564FB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -387,7 +403,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		870675861C06245E00940D6E /* Debug */ = {
+		87EC8D3B1C5F6A0000D564FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -423,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -432,7 +448,7 @@
 			};
 			name = Debug;
 		};
-		870675871C06245E00940D6E /* Release */ = {
+		87EC8D3C1C5F6A0000D564FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -462,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,74 +486,76 @@
 			};
 			name = Release;
 		};
-		870675891C06245E00940D6E /* Debug */ = {
+		87EC8D3E1C5F6A0000D564FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3711A5959DE8F7C42BD081A4 /* Pods-AppCelularRegistrado.debug.xcconfig */;
+			baseConfigurationReference = C80B3D0FF61D5242322C04C6 /* Pods-appCelularRegistrado.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AppCelularRegistrado/Info.plist;
+				INFOPLIST_FILE = appCelularRegistrado/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.AppCelularRegistrado;
+				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.appCelularRegistrado;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		8706758A1C06245E00940D6E /* Release */ = {
+		87EC8D3F1C5F6A0000D564FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCBC423AA5314AB4103766F4 /* Pods-AppCelularRegistrado.release.xcconfig */;
+			baseConfigurationReference = EBC0EDEDE4B05F72AE747E8E /* Pods-appCelularRegistrado.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AppCelularRegistrado/Info.plist;
+				INFOPLIST_FILE = appCelularRegistrado/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.AppCelularRegistrado;
+				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.appCelularRegistrado;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		8706758C1C06245E00940D6E /* Debug */ = {
+		87EC8D411C5F6A0000D564FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = AppCelularRegistradoTests/Info.plist;
+				INFOPLIST_FILE = appCelularRegistradoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.AppCelularRegistradoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.appCelularRegistradoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppCelularRegistrado.app/AppCelularRegistrado";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appCelularRegistrado.app/appCelularRegistrado";
 			};
 			name = Debug;
 		};
-		8706758D1C06245E00940D6E /* Release */ = {
+		87EC8D421C5F6A0000D564FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = AppCelularRegistradoTests/Info.plist;
+				INFOPLIST_FILE = appCelularRegistradoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.AppCelularRegistradoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.appCelularRegistradoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppCelularRegistrado.app/AppCelularRegistrado";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appCelularRegistrado.app/appCelularRegistrado";
 			};
 			name = Release;
 		};
-		8706758F1C06245E00940D6E /* Debug */ = {
+		87EC8D441C5F6A0000D564FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = AppCelularRegistradoUITests/Info.plist;
+				INFOPLIST_FILE = appCelularRegistradoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.AppCelularRegistradoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.appCelularRegistradoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AppCelularRegistrado;
+				TEST_TARGET_NAME = appCelularRegistrado;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
 		};
-		870675901C06245E00940D6E /* Release */ = {
+		87EC8D451C5F6A0000D564FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = AppCelularRegistradoUITests/Info.plist;
+				INFOPLIST_FILE = appCelularRegistradoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.AppCelularRegistradoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = celularegistrado.com.br.appCelularRegistradoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AppCelularRegistrado;
+				TEST_TARGET_NAME = appCelularRegistrado;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
@@ -545,43 +563,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8706755B1C06245E00940D6E /* Build configuration list for PBXProject "AppCelularRegistrado" */ = {
+		87EC8D101C5F69FF00D564FB /* Build configuration list for PBXProject "appCelularRegistrado" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				870675861C06245E00940D6E /* Debug */,
-				870675871C06245E00940D6E /* Release */,
+				87EC8D3B1C5F6A0000D564FB /* Debug */,
+				87EC8D3C1C5F6A0000D564FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		870675881C06245E00940D6E /* Build configuration list for PBXNativeTarget "AppCelularRegistrado" */ = {
+		87EC8D3D1C5F6A0000D564FB /* Build configuration list for PBXNativeTarget "appCelularRegistrado" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				870675891C06245E00940D6E /* Debug */,
-				8706758A1C06245E00940D6E /* Release */,
+				87EC8D3E1C5F6A0000D564FB /* Debug */,
+				87EC8D3F1C5F6A0000D564FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8706758B1C06245E00940D6E /* Build configuration list for PBXNativeTarget "AppCelularRegistradoTests" */ = {
+		87EC8D401C5F6A0000D564FB /* Build configuration list for PBXNativeTarget "appCelularRegistradoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8706758C1C06245E00940D6E /* Debug */,
-				8706758D1C06245E00940D6E /* Release */,
+				87EC8D411C5F6A0000D564FB /* Debug */,
+				87EC8D421C5F6A0000D564FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8706758E1C06245E00940D6E /* Build configuration list for PBXNativeTarget "AppCelularRegistradoUITests" */ = {
+		87EC8D431C5F6A0000D564FB /* Build configuration list for PBXNativeTarget "appCelularRegistradoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8706758F1C06245E00940D6E /* Debug */,
-				870675901C06245E00940D6E /* Release */,
+				87EC8D441C5F6A0000D564FB /* Debug */,
+				87EC8D451C5F6A0000D564FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 870675581C06245E00940D6E /* Project object */;
+	rootObject = 87EC8D0D1C5F69FF00D564FB /* Project object */;
 }

@@ -14,7 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AppCelularRegistrado.xcscheme</key>
+		<key>PKHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-appCelularRegistrado.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,13 +29,44 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyJSON.xcscheme</key>
+		<key>SWXMLHash.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>05094CC4A047119F7ADC14EE74C4881C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1525843B8410BF92605061A9AD4116BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>432ECC54282C84882B482CCB4CF227FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>61BC4ECDF5816D0006ED0FE5DE1E67D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8479B4B2FE48BC1FF3AD9763D939F5CA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AACD4431CD9C8CBFB0471A06201005B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

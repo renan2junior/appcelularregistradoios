@@ -24,7 +24,7 @@ AlamofireImage is an image component library for Alamofire.
 ## Requirements
 
 - iOS 8.0+ / Mac OS X 10.9+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 7.1+
+- Xcode 7.2+
 
 ## Migration Guides
 
@@ -314,7 +314,7 @@ By updating the last access date for each image, the image cache can make more i
 
 #### Memory Warnings
 
-The `AutoPurgingImageCache` also listens for memory warnings from your application and will purge all images from the cache is a memory warning is observed.
+The `AutoPurgingImageCache` also listens for memory warnings from your application and will purge all images from the cache if a memory warning is observed.
 
 ### Image Downloader
 

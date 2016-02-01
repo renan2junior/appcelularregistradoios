@@ -1,14 +1,14 @@
 //
-//  AppCelularRegistradoUITests.swift
-//  AppCelularRegistradoUITests
+//  appCelularRegistradoUITests.swift
+//  appCelularRegistradoUITests
 //
-//  Created by renanjunior on 25/11/15.
-//  Copyright © 2015 celularegistrado.com.br. All rights reserved.
+//  Created by renanjunior on 01/02/16.
+//  Copyright © 2016 celularegistrado.com.br. All rights reserved.
 //
 
 import XCTest
 
-class AppCelularRegistradoUITests: XCTestCase {
+class appCelularRegistradoUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

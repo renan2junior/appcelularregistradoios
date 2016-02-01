@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AppCelularRegistrado.xcscheme</key>
+		<key>appCelularRegistrado.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8706755F1C06245E00940D6E</key>
+		<key>87EC8D141C5F69FF00D564FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>870675731C06245E00940D6E</key>
+		<key>87EC8D281C5F6A0000D564FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8706757E1C06245E00940D6E</key>
+		<key>87EC8D331C5F6A0000D564FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

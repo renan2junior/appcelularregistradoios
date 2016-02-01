@@ -84,14 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-AppCelularRegistrado/Alamofire.framework"
-  install_framework "Pods-AppCelularRegistrado/AlamofireImage.framework"
-  install_framework "Pods-AppCelularRegistrado/QRCodeReader.framework"
-  install_framework "Pods-AppCelularRegistrado/SwiftyJSON.framework"
+  install_framework "Pods-appCelularRegistrado/Alamofire.framework"
+  install_framework "Pods-appCelularRegistrado/AlamofireImage.framework"
+  install_framework "Pods-appCelularRegistrado/PKHUD.framework"
+  install_framework "Pods-appCelularRegistrado/QRCodeReader.framework"
+  install_framework "Pods-appCelularRegistrado/SWXMLHash.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-AppCelularRegistrado/Alamofire.framework"
-  install_framework "Pods-AppCelularRegistrado/AlamofireImage.framework"
-  install_framework "Pods-AppCelularRegistrado/QRCodeReader.framework"
-  install_framework "Pods-AppCelularRegistrado/SwiftyJSON.framework"
+  install_framework "Pods-appCelularRegistrado/Alamofire.framework"
+  install_framework "Pods-appCelularRegistrado/AlamofireImage.framework"
+  install_framework "Pods-appCelularRegistrado/PKHUD.framework"
+  install_framework "Pods-appCelularRegistrado/QRCodeReader.framework"
+  install_framework "Pods-appCelularRegistrado/SWXMLHash.framework"
 fi
