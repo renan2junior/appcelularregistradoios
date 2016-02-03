@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		41869B64D3035BB9CB88BFF5 /* Pods_appCelularRegistrado.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A09DCB6C1EBB3100752BF07 /* Pods_appCelularRegistrado.framework */; };
+		873603CE1C621FC4002414AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873603CD1C621FC4002414AA /* QuartzCore.framework */; };
+		873603D01C62216F002414AA /* JDAvatarProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873603CF1C62216F002414AA /* JDAvatarProgress.swift */; };
 		87613DC11C61A317003C8915 /* ResultadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87613DC01C61A317003C8915 /* ResultadoViewController.swift */; };
 		878B696C1C5F748A00FC4BA2 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B696B1C5F748A00FC4BA2 /* QRCodeViewController.swift */; };
 		878B696E1C5F9DA000FC4BA2 /* InforImeiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B696D1C5F9DA000FC4BA2 /* InforImeiController.swift */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		6A09DCB6C1EBB3100752BF07 /* Pods_appCelularRegistrado.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appCelularRegistrado.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		873603CD1C621FC4002414AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		873603CF1C62216F002414AA /* JDAvatarProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDAvatarProgress.swift; sourceTree = "<group>"; };
 		87613DC01C61A317003C8915 /* ResultadoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadoViewController.swift; sourceTree = "<group>"; };
 		878B696B1C5F748A00FC4BA2 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		878B696D1C5F9DA000FC4BA2 /* InforImeiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InforImeiController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873603CE1C621FC4002414AA /* QuartzCore.framework in Frameworks */,
 				41869B64D3035BB9CB88BFF5 /* Pods_appCelularRegistrado.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +116,7 @@
 		63A3C7F2D588D3588E1652BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				873603CD1C621FC4002414AA /* QuartzCore.framework */,
 				6A09DCB6C1EBB3100752BF07 /* Pods_appCelularRegistrado.framework */,
 			);
 			name = Frameworks;
@@ -140,6 +146,7 @@
 		87CA10C21C61772C001E7F95 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				873603CF1C62216F002414AA /* JDAvatarProgress.swift */,
 				87CA10C31C617739001E7F95 /* Reachability.swift */,
 			);
 			name = Util;
@@ -409,6 +416,7 @@
 				878B696E1C5F9DA000FC4BA2 /* InforImeiController.swift in Sources */,
 				87613DC11C61A317003C8915 /* ResultadoViewController.swift in Sources */,
 				87CA10BE1C61743A001E7F95 /* InfoPageViewController.swift in Sources */,
+				873603D01C62216F002414AA /* JDAvatarProgress.swift in Sources */,
 				87CA10BC1C616E81001E7F95 /* InfoAppViewController.swift in Sources */,
 				87CA10C91C61784D001E7F95 /* ParseModels.swift in Sources */,
 				87CA10C41C617739001E7F95 /* Reachability.swift in Sources */,

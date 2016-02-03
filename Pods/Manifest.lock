@@ -2,18 +2,16 @@ PODS:
   - Alamofire (3.1.5)
   - AlamofireImage (2.3.0):
     - Alamofire (~> 3.1)
-  - PKHUD (2.2.5)
+  - JDSwiftAvatarProgress (1.0.3)
   - QRCodeReader.swift (5.1.1)
   - SwiftyJSON (2.3.2)
-  - SWXMLHash (2.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - AlamofireImage (~> 2.0)
-  - PKHUD
+  - JDSwiftAvatarProgress
   - QRCodeReader.swift (~> 5.1.0)
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
-  - SWXMLHash (~> 2.0.0)
 
 EXTERNAL SOURCES:
   SwiftyJSON:
@@ -27,9 +25,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
   AlamofireImage: 4013fb5b99b10117bf2554a67b9bd2231d476b45
-  PKHUD: 15d9db01fb008bb9247c6d785c585f587955b113
+  JDSwiftAvatarProgress: 47abbed863f21ca3208a32a660876ffa124410e9
   QRCodeReader.swift: 48a3689ac7165e97e47f949b45e52e5c2d9425f5
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
-  SWXMLHash: 9e6bd7db2e8275eaf3d2082265623d6e749e169d
 
 COCOAPODS: 0.39.0

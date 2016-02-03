@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import AlamofireImage
+
+
 
 
 class ResultadoViewController: UIViewController {
     
     var celular:Celular?
+    
     
     @IBOutlet var nome:UILabel!
     @IBOutlet var status:UILabel!
@@ -19,6 +23,7 @@ class ResultadoViewController: UIViewController {
     @IBOutlet var operadora:UILabel!
     @IBOutlet var modelo:UILabel!
     @IBOutlet var alerta:UILabel!
+    @IBOutlet weak var avatarImgView:UIImageView!
     
 
     override func viewDidLoad() {
@@ -26,6 +31,8 @@ class ResultadoViewController: UIViewController {
         
     
         print(celular?.nome_fabricante!)
+        
+       
 
         if((celular?.alerta_celular)! == "0"){
             status.text = "Regular"
@@ -44,6 +51,25 @@ class ResultadoViewController: UIViewController {
         imei.text = celular?.imei_celular
         operadora.text = celular?.nome_operadora
         modelo.text = celular?.nome_modelo
+        
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        setUpImageView()
+      
+    }
+    
+   
+    
+    private func setUpImageView() {
+        let URL = NSURL(string: "https://httpbin.org/image/png")!
+        avatarImgView.af_setImageWithURL(URL)
+        let red = UIColor(red: 100.0/255.0, green: 130.0/255.0, blue: 230.0/255.0, alpha: 1.0)
+        avatarImgView.layer.borderColor = red.CGColor
+        //avatarImgView.layer.borderWidth = 5.0
+        self.avatarImgView.layer.cornerRadius = self.avatarImgView.frame.size.width / 2;
+        
         
         
     }
