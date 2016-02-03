@@ -167,6 +167,7 @@
                     <connections>
                         <outlet property="qrCodeFrameView" destination="wGP-0v-aLD" id="asN-v2-Ih3"/>
                         <outlet property="viewBorder" destination="Uv8-YX-frO" id="PYt-Yw-YXR"/>
+                        <segue destination="LQJ-KE-ceW" kind="showDetail" identifier="Resultado" id="1n6-y3-Dgd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLi-Bk-RrJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -197,6 +198,7 @@
                         <viewControllerLayoutGuide type="bottom" id="C3A-p7-Wg7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5CD-fg-4HK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -209,12 +211,13 @@
         <!--Resultado-->
         <scene sceneID="zPp-28-L19">
             <objects>
-                <viewController title="Resultado" id="LQJ-KE-ceW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Resultado" title="Resultado" id="LQJ-KE-ceW" customClass="ResultadoViewController" customModule="appCelularRegistrado" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D7F-f3-NlH"/>
                         <viewControllerLayoutGuide type="bottom" id="cYm-NL-r3G"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tef-KT-kim">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -233,6 +236,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eJ9-Lt-AWt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7hk-Bh-EOa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-9b-oo8">
@@ -286,6 +290,7 @@
                         <viewControllerLayoutGuide type="bottom" id="rgw-yh-90b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="page1" id="Qbi-9l-y0k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgh-md-yjG">
@@ -328,6 +333,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wVJ-dl-9jR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="page2" id="DqV-5Q-5t7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

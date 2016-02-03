@@ -14,7 +14,7 @@ class GlobalVariables {
     static let sharedInstance = GlobalVariables()
 
     let WS_BASE_URL : String = "https://celularregistradows.herokuapp.com"
-    let WS_RECUPERAR_QRCODE: String = "/cad_celular/qrcode/909646"
+    let WS_RECUPERAR_QRCODE: String = "/cad_celular/qrcode/"
     let WS_RECUPERAR_TAG: String = "/cad_celular/tag/"
     let WS_RECUPERAR_IMEI:String = "/cad_celular/imei/"
     
@@ -25,4 +25,6 @@ class GlobalVariables {
     let FONT_MISO_TITLE = UIFont(name: "Miso-Light", size:25)!
     let FONT_JOSEFIN_TITLE = UIFont(name: "JosefinSans-Light", size:20)
     let FONT_JOSEFIN_BODY = UIFont(name: "JosefinSans-Thin", size:16)
+    
+   
 }

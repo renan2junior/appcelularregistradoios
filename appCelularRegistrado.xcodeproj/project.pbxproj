@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41869B64D3035BB9CB88BFF5 /* Pods_appCelularRegistrado.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A09DCB6C1EBB3100752BF07 /* Pods_appCelularRegistrado.framework */; };
+		87613DC11C61A317003C8915 /* ResultadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87613DC01C61A317003C8915 /* ResultadoViewController.swift */; };
 		878B696C1C5F748A00FC4BA2 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B696B1C5F748A00FC4BA2 /* QRCodeViewController.swift */; };
 		878B696E1C5F9DA000FC4BA2 /* InforImeiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B696D1C5F9DA000FC4BA2 /* InforImeiController.swift */; };
 		87CA10BC1C616E81001E7F95 /* InfoAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CA10BB1C616E81001E7F95 /* InfoAppViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		6A09DCB6C1EBB3100752BF07 /* Pods_appCelularRegistrado.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appCelularRegistrado.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87613DC01C61A317003C8915 /* ResultadoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadoViewController.swift; sourceTree = "<group>"; };
 		878B696B1C5F748A00FC4BA2 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		878B696D1C5F9DA000FC4BA2 /* InforImeiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InforImeiController.swift; sourceTree = "<group>"; };
 		87CA10BB1C616E81001E7F95 /* InfoAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoAppViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				878B696D1C5F9DA000FC4BA2 /* InforImeiController.swift */,
 				87CA10BB1C616E81001E7F95 /* InfoAppViewController.swift */,
 				87CA10BD1C61743A001E7F95 /* InfoPageViewController.swift */,
+				87613DC01C61A317003C8915 /* ResultadoViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				87CA10C11C6176F4001E7F95 /* AppService.swift in Sources */,
 				87CA10C71C617793001E7F95 /* GlobalVariables.swift in Sources */,
 				878B696E1C5F9DA000FC4BA2 /* InforImeiController.swift in Sources */,
+				87613DC11C61A317003C8915 /* ResultadoViewController.swift in Sources */,
 				87CA10BE1C61743A001E7F95 /* InfoPageViewController.swift in Sources */,
 				87CA10BC1C616E81001E7F95 /* InfoAppViewController.swift in Sources */,
 				87CA10C91C61784D001E7F95 /* ParseModels.swift in Sources */,

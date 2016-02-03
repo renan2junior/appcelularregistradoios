@@ -18,17 +18,48 @@ class AppService {
 
 
     func getCelularQRCode(completionHandler: (responseObject: JSON?) -> (), tipo:String) {
-        makeCallTipo(completionHandler, tipo: tipo)
+        makeCallQRCode(completionHandler, tipo: tipo)
     }
     
-    func makeCallTipo(completionHandler: (responseObject: JSON?) -> (), tipo:String) {
-        Alamofire.request(.GET, "https://celularregistradows.herokuapp.com/cad_celular/qrcode/"+tipo, headers:headers)
-            .responseJSON { _,  _, response in
-                let json:JSON = JSON(response.value!)
+    func makeCallQRCode(completionHandler: (responseObject: JSON?) -> (), tipo:String) {
+        
+        Alamofire.request(.GET, "https://celularregistradows.herokuapp.com/cad_celular/qrcode/" + tipo, headers:headers)
+            .responseJSON {response in
+                let json:JSON = JSON(response.result.value!)
+                
                 completionHandler(responseObject: json)
         }
     }
 
+
+    
+    func getCelularTag(completionHandler: (responseObject: JSON?) -> (), tipo:String) {
+        makeCallQRCode(completionHandler, tipo: tipo)
+    }
+    
+    func makeCallTag(completionHandler: (responseObject: JSON?) -> (), tipo:String) {
+        
+        Alamofire.request(.GET, "https://celularregistradows.herokuapp.com/cad_celular/tag/" + tipo, headers:headers)
+            .responseJSON {response in
+                let json:JSON = JSON(response.result.value!)
+                completionHandler(responseObject: json)
+        }
+    }
+
+    
+    
+    func getCelularImei(completionHandler: (responseObject: JSON?) -> (), tipo:String) {
+        makeCallQRCode(completionHandler, tipo: tipo)
+    }
+    
+    func makeCallImei(completionHandler: (responseObject: JSON?) -> (), tipo:String) {
+        
+        Alamofire.request(.GET, "https://celularregistradows.herokuapp.com/cad_celular/imei/" + tipo, headers:headers)
+            .responseJSON {response in
+                let json:JSON = JSON(response.result.value!)
+                completionHandler(responseObject: json)
+        }
+    }
 
 
 

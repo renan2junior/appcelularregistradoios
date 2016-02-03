@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import Alamofire
+import SwiftyJSON
 
 class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDelegate{
     
@@ -20,6 +21,13 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
     @IBOutlet weak var viewBorder:UIView?
     var qrCodeNameScan:String?
     var a : JSON = JSON.null
+    let parse:ParseModels = ParseModels()
+    let ws:AppService = AppService()
+    var celular:Celular!
+    
+    
+    
+    
     
     let supportedBarCodes = [AVMetadataObjectTypeQRCode, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeCode39Code, AVMetadataObjectTypeCode93Code, AVMetadataObjectTypeUPCECode, AVMetadataObjectTypePDF417Code, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeAztecCode]
     
@@ -53,28 +61,7 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
             videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
             videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
             
-            print(qrCodeFrameView!.layer.bounds)
-            print(viewBorder!.layer.bounds)
-            print(viewBorder!.frame.height)
-            print(viewBorder!.frame.width)
             
-            Alamofire.request(.GET, "https://celularregistradows.herokuapp.com/cad_celular/qrcode/909646")
-                .responseString { response in
-                    print("Response String: \(response.result.value)")
-                    print("Response String: \(response.result.error)")
-                }
-                .responseJSON { response in
-                    print("Response JSON: \(response.result.value)")
-                    print("Response String: \(response.result.error)")
-            }
-            
-            ws.getCelularQRCode(
-                {retorno in
-                    self.a = retorno!
-                    return
-                }, tipo: ("909646"))
-            
-        
             
         } catch {
             
@@ -86,11 +73,19 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
     }
     
     override func viewDidAppear(animated: Bool) {
-        print(qrCodeFrameView!.layer.bounds)
-        print(viewBorder!.layer.bounds)
-        print(viewBorder!.frame.height)
-        print(viewBorder!.frame.width)
-
+        
+        ws.getCelularQRCode(
+            {retorno in
+                self.a = retorno!
+                print(self.a)
+                print(self.a["nome_fabricante"])
+                self.celular = self.parse.parseCelular(self.a)
+                if(self.celular != nil){
+                    self.performSegueWithIdentifier("Resultado", sender: self)
+                }
+                return
+            }, tipo: "909646")
+   
         videoPreviewLayer?.frame = qrCodeFrameView!.layer.bounds
         if((videoPreviewLayer) != nil){
             qrCodeFrameView?.layer.addSublayer(videoPreviewLayer!)
@@ -120,14 +115,28 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
         // Here we use filter method to check if the type of metadataObj is supported
         // Instead of hardcoding the AVMetadataObjectTypeQRCode, we check if the type
         // can be found in the array of supported bar codes.
+        
+       
+        
         if supportedBarCodes.contains(metadataObj.type) {
             
             if metadataObj.stringValue != nil {
                 qrCodeNameScan = metadataObj.stringValue
                 print(qrCodeNameScan)
                 captureSession?.stopRunning()
-                // self.performSegueWithIdentifier("goPlayer", sender: self)
-               
+                
+                ws.getCelularQRCode(
+                    {retorno in
+                        self.a = retorno!
+                        print(self.a)
+                        print(self.a["nome_fabricante"])
+                        self.celular = self.parse.parseCelular(self.a)
+                        if(self.celular != nil){
+                            self.performSegueWithIdentifier("Resultado", sender: self)
+                        }
+                        return
+                    }, tipo: qrCodeNameScan!)
+
                 
                 
             }
@@ -136,12 +145,12 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        /*
-        if segue.identifier == "goPlayer" {
-            let childViewController = segue.destinationViewController as! PlayerViewController
-            childViewController.qrCodeName = qrCodeNameScan
+        
+        if segue.identifier == "Resultado" {
+            let childViewController = segue.destinationViewController as! ResultadoViewController
+            childViewController.celular = self.celular
         }
-        */
+        
     }
     
     
