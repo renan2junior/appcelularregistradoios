@@ -63,7 +63,7 @@ class ResultadoViewController: UIViewController {
    
     
     private func setUpImageView() {
-        let URL = NSURL(string: "https://httpbin.org/image/png")!
+        let URL = NSURL(string: celular!.imagem_usuario!)!
         avatarImgView.af_setImageWithURL(URL)
         let red = UIColor(red: 100.0/255.0, green: 130.0/255.0, blue: 230.0/255.0, alpha: 1.0)
         avatarImgView.layer.borderColor = red.CGColor
