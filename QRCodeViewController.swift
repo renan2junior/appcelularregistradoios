@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-import Alamofire
+
 import SwiftyJSON
 
 class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDelegate{
@@ -74,6 +74,7 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
     
     override func viewDidAppear(animated: Bool) {
         
+        /*
         ws.getCelularQRCode(
             {retorno in
                 self.a = retorno!
@@ -85,7 +86,7 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
                 }
                 return
             }, tipo: "909646")
-   
+   */
         videoPreviewLayer?.frame = qrCodeFrameView!.layer.bounds
         if((videoPreviewLayer) != nil){
             qrCodeFrameView?.layer.addSublayer(videoPreviewLayer!)
