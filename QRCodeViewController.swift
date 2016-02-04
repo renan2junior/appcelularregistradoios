@@ -75,21 +75,9 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
     
     override func viewDidAppear(animated: Bool) {
         
-        /*
-        ws.getCelularQRCode(
-            {retorno in
-                self.a = retorno!
-                print(self.a)
-                print(self.a["nome_fabricante"])
-                self.celular = self.parse.parseCelular(self.a)
-                if(self.celular != nil){
-                    self.performSegueWithIdentifier("Resultado", sender: self)
-                }
-                return
-            }, tipo: "909646")
-   */
-        videoPreviewLayer?.frame = qrCodeFrameView!.layer.bounds
+        
         if((videoPreviewLayer) != nil){
+            videoPreviewLayer?.frame = qrCodeFrameView!.layer.bounds
             qrCodeFrameView?.layer.addSublayer(videoPreviewLayer!)
             // Start video capture
             captureSession?.startRunning()

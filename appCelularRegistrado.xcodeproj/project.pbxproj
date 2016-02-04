@@ -22,6 +22,7 @@
 		87CA10C91C61784D001E7F95 /* ParseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CA10C81C61784D001E7F95 /* ParseModels.swift */; };
 		87CA10CC1C617AF1001E7F95 /* Celular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CA10CB1C617AF1001E7F95 /* Celular.swift */; };
 		87D29B781C62DF4A00ECB1AE /* ImeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D29B771C62DF4A00ECB1AE /* ImeiViewController.swift */; };
+		87D29B7A1C62E4CC00ECB1AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D29B791C62E4CC00ECB1AE /* Main.storyboard */; };
 		87EC8D191C5F69FF00D564FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC8D181C5F69FF00D564FB /* AppDelegate.swift */; };
 		87EC8D1B1C5F69FF00D564FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC8D1A1C5F69FF00D564FB /* ViewController.swift */; };
 		87EC8D201C5F69FF00D564FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87EC8D1F1C5F69FF00D564FB /* Assets.xcassets */; };
@@ -63,10 +64,11 @@
 		87CA10C81C61784D001E7F95 /* ParseModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseModels.swift; sourceTree = "<group>"; };
 		87CA10CB1C617AF1001E7F95 /* Celular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celular.swift; sourceTree = "<group>"; };
 		87D29B771C62DF4A00ECB1AE /* ImeiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImeiViewController.swift; sourceTree = "<group>"; };
+		87D29B791C62E4CC00ECB1AE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = AppCelularRegistrado/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		87EC8D151C5F69FF00D564FB /* appCelularRegistrado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appCelularRegistrado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EC8D181C5F69FF00D564FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87EC8D1A1C5F69FF00D564FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		87EC8D1D1C5F69FF00D564FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87EC8D1D1C5F69FF00D564FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_t.storyboard; sourceTree = "<group>"; };
 		87EC8D1F1C5F69FF00D564FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87EC8D221C5F69FF00D564FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87EC8D241C5F69FF00D564FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -205,10 +207,11 @@
 			children = (
 				87EC8D181C5F69FF00D564FB /* AppDelegate.swift */,
 				87EC8D1A1C5F69FF00D564FB /* ViewController.swift */,
-				87EC8D1C1C5F69FF00D564FB /* Main.storyboard */,
+				87EC8D1C1C5F69FF00D564FB /* Main_t.storyboard */,
 				87EC8D1F1C5F69FF00D564FB /* Assets.xcassets */,
 				87EC8D211C5F69FF00D564FB /* LaunchScreen.storyboard */,
 				87EC8D241C5F69FF00D564FB /* Info.plist */,
+				87D29B791C62E4CC00ECB1AE /* Main.storyboard */,
 			);
 			path = appCelularRegistrado;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			files = (
 				87EC8D231C5F69FF00D564FB /* LaunchScreen.storyboard in Resources */,
 				87EC8D201C5F69FF00D564FB /* Assets.xcassets in Resources */,
+				87D29B7A1C62E4CC00ECB1AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,12 +466,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		87EC8D1C1C5F69FF00D564FB /* Main.storyboard */ = {
+		87EC8D1C1C5F69FF00D564FB /* Main_t.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				87EC8D1D1C5F69FF00D564FB /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main_t.storyboard;
 			sourceTree = "<group>";
 		};
 		87EC8D211C5F69FF00D564FB /* LaunchScreen.storyboard */ = {
