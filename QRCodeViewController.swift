@@ -106,7 +106,7 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
         // Instead of hardcoding the AVMetadataObjectTypeQRCode, we check if the type
         // can be found in the array of supported bar codes.
         
-       
+        
         
         if supportedBarCodes.contains(metadataObj.type) {
             
@@ -114,19 +114,27 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
                 qrCodeNameScan = metadataObj.stringValue
                 print(qrCodeNameScan)
                 captureSession?.stopRunning()
-                
-                ws.getCelularQRCode(
-                    {retorno in
-                        self.a = retorno!
-                        print(self.a)
-                        print(self.a["nome_fabricante"])
-                        self.celular = self.parse.parseCelular(self.a)
-                        if(self.celular != nil){
-                            self.performSegueWithIdentifier("Resultado", sender: self)
-                        }
-                        return
-                    }, tipo: qrCodeNameScan!)
-
+                if(Reachability().isConnectedToNetwork()){
+                    ws.getCelularQRCode(
+                        {retorno in
+                            self.a = retorno!
+                            print(self.a)
+                            print(self.a["nome_fabricante"])
+                            self.celular = self.parse.parseCelular(self.a)
+                            if(self.celular != nil){
+                                self.performSegueWithIdentifier("Resultado", sender: self)
+                            }
+                            return
+                        }, tipo: qrCodeNameScan!)
+                    
+                } else{
+                    
+                    let alert = UIAlertView()
+                    alert.title =  GlobalVariables.sharedInstance.TITULO_ALERT_ERROR
+                    alert.message = GlobalVariables.sharedInstance.MSG_ERROR
+                    alert.addButtonWithTitle("OK")
+                    alert.show()
+                }
                 
                 
             }

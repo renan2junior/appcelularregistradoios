@@ -26,7 +26,7 @@ class TagViewController : UIViewController{
     }
     
     override func viewDidAppear(animated: Bool) {
-
+        
     }
     
     
@@ -37,18 +37,28 @@ class TagViewController : UIViewController{
     
     
     @IBAction func getCelular(sender: AnyObject){
-        ws.getCelularTag(
-            {retorno in
-                self.a = retorno!
-                print(self.a)
-                print(self.a["nome_fabricante"])
-                self.celular = self.parse.parseCelular(self.a)
-                if(self.celular != nil){
-                    self.performSegueWithIdentifier("Resultado", sender: self)
-                }
-                return
-            }, tipo: campo_busca.text!)
-     }
+        if(Reachability().isConnectedToNetwork()){
+            ws.getCelularTag(
+                {retorno in
+                    self.a = retorno!
+                    print(self.a)
+                    print(self.a["nome_fabricante"])
+                    self.celular = self.parse.parseCelular(self.a)
+                    if(self.celular != nil){
+                        self.performSegueWithIdentifier("Resultado", sender: self)
+                    }
+                    return
+                }, tipo: campo_busca.text!)
+        } else{
+            
+            let alert = UIAlertView()
+            alert.title =  GlobalVariables.sharedInstance.TITULO_ALERT_ERROR
+            alert.message = GlobalVariables.sharedInstance.MSG_ERROR
+            alert.addButtonWithTitle("OK")
+            alert.show()
+        }
+        
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
