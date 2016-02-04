@@ -11,7 +11,7 @@ import AVFoundation
 
 import SwiftyJSON
 
-class ImeiViewController : UIViewController{
+class ImeiViewController : UIViewController, UITextFieldDelegate {
     
     var a : JSON = JSON.null
     let parse:ParseModels = ParseModels()
@@ -23,6 +23,7 @@ class ImeiViewController : UIViewController{
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        campo_busca.delegate=self
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -73,6 +74,23 @@ class ImeiViewController : UIViewController{
         }
         
     }
+    
+    /**
+     * Called when 'return' key pressed. return NO to ignore.
+     */
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+    /**
+     * Called when the user click on the view (outside the UITextField).
+     */
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
     
     
 }
