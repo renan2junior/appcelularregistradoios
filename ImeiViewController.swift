@@ -41,21 +41,26 @@ class ImeiViewController : UIViewController{
             ws.getCelularImei(
                 {retorno in
                     self.a = retorno!
-                    print(self.a)
-                    print(self.a["nome_fabricante"])
                     self.celular = self.parse.parseCelular(self.a)
-                    if(self.celular != nil){
+                    if(self.celular != nil && self.celular.imei_celular != "" ){
                         self.performSegueWithIdentifier("Resultado", sender: self)
+                    }else{
+                        let alert = UIAlertView()
+                        alert.title =  "Atenção"
+                        alert.message = "Celular não encontrado com esse IMEI."
+                        alert.addButtonWithTitle("OK")
+                        alert.show()
                     }
                     return
                 }, tipo: campo_busca.text!)
         } else{
             
             let alert = UIAlertView()
-            alert.title =  GlobalVariables.sharedInstance.TITULO_ALERT_ERROR
-            alert.message = GlobalVariables.sharedInstance.MSG_ERROR
+            alert.title =  "Ops!"
+            alert.message = "Ocorreu um erro de rede."
             alert.addButtonWithTitle("OK")
             alert.show()
+
         }
         
     }

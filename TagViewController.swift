@@ -11,7 +11,7 @@ import AVFoundation
 
 import SwiftyJSON
 
-class TagViewController : UIViewController{
+class TagViewController : UIViewController, UITextFieldDelegate {
     
     var a : JSON = JSON.null
     let parse:ParseModels = ParseModels()
@@ -23,6 +23,7 @@ class TagViewController : UIViewController{
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        campo_busca.delegate=self
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -41,19 +42,23 @@ class TagViewController : UIViewController{
             ws.getCelularTag(
                 {retorno in
                     self.a = retorno!
-                    print(self.a)
-                    print(self.a["nome_fabricante"])
                     self.celular = self.parse.parseCelular(self.a)
-                    if(self.celular != nil){
+                    if(self.celular != nil && self.celular.imei_celular != "" ){
                         self.performSegueWithIdentifier("Resultado", sender: self)
+                    }else{
+                        let alert = UIAlertView()
+                        alert.title =  "Atenção"
+                        alert.message = "Celular não encontrado com essa TAG."
+                        alert.addButtonWithTitle("OK")
+                        alert.show()
                     }
                     return
                 }, tipo: campo_busca.text!)
         } else{
             
             let alert = UIAlertView()
-            alert.title =  GlobalVariables.sharedInstance.TITULO_ALERT_ERROR
-            alert.message = GlobalVariables.sharedInstance.MSG_ERROR
+            alert.title =  "Ops!"
+            alert.message = "Ocorreu um erro de rede."
             alert.addButtonWithTitle("OK")
             alert.show()
         }
@@ -67,6 +72,22 @@ class TagViewController : UIViewController{
             childViewController.celular = self.celular
         }
         
+    }
+    
+    /**
+     * Called when 'return' key pressed. return NO to ignore.
+     */
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+    /**
+     * Called when the user click on the view (outside the UITextField).
+     */
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     

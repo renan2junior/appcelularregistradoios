@@ -75,12 +75,18 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
     
     override func viewDidAppear(animated: Bool) {
         
-        
-        if((videoPreviewLayer) != nil){
+        if(videoPreviewLayer != nil){
             videoPreviewLayer?.frame = qrCodeFrameView!.layer.bounds
             qrCodeFrameView?.layer.addSublayer(videoPreviewLayer!)
             // Start video capture
             captureSession?.startRunning()
+        }else{
+            let alert = UIAlertView()
+            alert.title =  "Atenção"
+            alert.message = "Recurso de camera não habilitado."
+            alert.addButtonWithTitle("OK")
+            alert.show()
+            return
         }
     }
     
@@ -118,22 +124,28 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
                     ws.getCelularQRCode(
                         {retorno in
                             self.a = retorno!
-                            print(self.a)
-                            print(self.a["nome_fabricante"])
                             self.celular = self.parse.parseCelular(self.a)
-                            if(self.celular != nil){
+                            if(self.celular != nil && self.celular.imei_celular != "" ){
                                 self.performSegueWithIdentifier("Resultado", sender: self)
+                            }else{
+                                let alert = UIAlertView()
+                                alert.title =  "Atenção"
+                                alert.message = "Celular não encontrado com esse QRCode."
+                                alert.addButtonWithTitle("OK")
+                                alert.show()
                             }
+
                             return
                         }, tipo: qrCodeNameScan!)
                     
                 } else{
                     
                     let alert = UIAlertView()
-                    alert.title =  GlobalVariables.sharedInstance.TITULO_ALERT_ERROR
-                    alert.message = GlobalVariables.sharedInstance.MSG_ERROR
+                    alert.title =  "Ops!"
+                    alert.message = "Ocorreu um erro de rede."
                     alert.addButtonWithTitle("OK")
                     alert.show()
+
                 }
                 
                 
