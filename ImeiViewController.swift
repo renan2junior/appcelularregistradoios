@@ -1,8 +1,8 @@
 //
-//  TagViewController.swift
+//  ImeiViewController.swift
 //  appCelularRegistrado
 //
-//  Created by renanjunior on 03/02/16.
+//  Created by Renan Junior on 03/02/16.
 //  Copyright © 2016 celularegistrado.com.br. All rights reserved.
 //
 
@@ -11,7 +11,7 @@ import AVFoundation
 
 import SwiftyJSON
 
-class TagViewController : UIViewController{
+class ImeiViewController : UIViewController{
     
     var a : JSON = JSON.null
     let parse:ParseModels = ParseModels()
@@ -26,7 +26,7 @@ class TagViewController : UIViewController{
     }
     
     override func viewDidAppear(animated: Bool) {
-
+        
     }
     
     
@@ -37,7 +37,7 @@ class TagViewController : UIViewController{
     
     
     @IBAction func getCelular(sender: AnyObject){
-        ws.getCelularTag(
+        ws.getCelularImei(
             {retorno in
                 self.a = retorno!
                 print(self.a)
@@ -48,7 +48,7 @@ class TagViewController : UIViewController{
                 }
                 return
             }, tipo: campo_busca.text!)
-     }
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         

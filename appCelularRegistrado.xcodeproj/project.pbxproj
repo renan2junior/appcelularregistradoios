@@ -21,6 +21,7 @@
 		87CA10C71C617793001E7F95 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CA10C61C617793001E7F95 /* GlobalVariables.swift */; };
 		87CA10C91C61784D001E7F95 /* ParseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CA10C81C61784D001E7F95 /* ParseModels.swift */; };
 		87CA10CC1C617AF1001E7F95 /* Celular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CA10CB1C617AF1001E7F95 /* Celular.swift */; };
+		87D29B781C62DF4A00ECB1AE /* ImeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D29B771C62DF4A00ECB1AE /* ImeiViewController.swift */; };
 		87EC8D191C5F69FF00D564FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC8D181C5F69FF00D564FB /* AppDelegate.swift */; };
 		87EC8D1B1C5F69FF00D564FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC8D1A1C5F69FF00D564FB /* ViewController.swift */; };
 		87EC8D201C5F69FF00D564FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87EC8D1F1C5F69FF00D564FB /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		87CA10C61C617793001E7F95 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		87CA10C81C61784D001E7F95 /* ParseModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseModels.swift; sourceTree = "<group>"; };
 		87CA10CB1C617AF1001E7F95 /* Celular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celular.swift; sourceTree = "<group>"; };
+		87D29B771C62DF4A00ECB1AE /* ImeiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImeiViewController.swift; sourceTree = "<group>"; };
 		87EC8D151C5F69FF00D564FB /* appCelularRegistrado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appCelularRegistrado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EC8D181C5F69FF00D564FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87EC8D1A1C5F69FF00D564FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				87CA10BD1C61743A001E7F95 /* InfoPageViewController.swift */,
 				87613DC01C61A317003C8915 /* ResultadoViewController.swift */,
 				87B6B36D1C628057003A7EBB /* TagViewController.swift */,
+				87D29B771C62DF4A00ECB1AE /* ImeiViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -173,17 +176,17 @@
 		87EC8D0C1C5F69FF00D564FB = {
 			isa = PBXGroup;
 			children = (
-				87CA10CA1C617AD9001E7F95 /* Models */,
-				87CA10C51C617782001E7F95 /* Supporting Files */,
-				87CA10C21C61772C001E7F95 /* Util */,
-				87CA10BF1C6176A9001E7F95 /* WS */,
-				878B696A1C5F746F00FC4BA2 /* Controller */,
 				87EC8D171C5F69FF00D564FB /* appCelularRegistrado */,
 				87EC8D2C1C5F6A0000D564FB /* appCelularRegistradoTests */,
 				87EC8D371C5F6A0000D564FB /* appCelularRegistradoUITests */,
-				87EC8D161C5F69FF00D564FB /* Products */,
-				0FA341323F0C1D619182B870 /* Pods */,
+				878B696A1C5F746F00FC4BA2 /* Controller */,
 				63A3C7F2D588D3588E1652BC /* Frameworks */,
+				87CA10CA1C617AD9001E7F95 /* Models */,
+				0FA341323F0C1D619182B870 /* Pods */,
+				87EC8D161C5F69FF00D564FB /* Products */,
+				87CA10C51C617782001E7F95 /* Supporting Files */,
+				87CA10C21C61772C001E7F95 /* Util */,
+				87CA10BF1C6176A9001E7F95 /* WS */,
 			);
 			sourceTree = "<group>";
 		};
@@ -414,6 +417,7 @@
 				87CA10CC1C617AF1001E7F95 /* Celular.swift in Sources */,
 				87CA10C11C6176F4001E7F95 /* AppService.swift in Sources */,
 				87CA10C71C617793001E7F95 /* GlobalVariables.swift in Sources */,
+				87D29B781C62DF4A00ECB1AE /* ImeiViewController.swift in Sources */,
 				878B696E1C5F9DA000FC4BA2 /* InforImeiController.swift in Sources */,
 				87613DC11C61A317003C8915 /* ResultadoViewController.swift in Sources */,
 				87CA10BE1C61743A001E7F95 /* InfoPageViewController.swift in Sources */,
