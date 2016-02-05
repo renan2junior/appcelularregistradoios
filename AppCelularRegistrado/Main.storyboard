@@ -210,18 +210,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qd9-4D-4JP">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" backgroundImage="lupa">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="136" y="363" width="48" height="48"/>
-                                </variation>
-                                <connections>
-                                    <action selector="cancel:" destination="WMG-HK-o99" eventType="touchUpInside" id="DB3-rG-VwK"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consultar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzw-7h-XVo">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -288,14 +276,31 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="285" width="320" height="21"/>
+                                    <rect key="frame" x="98" y="285" width="166" height="21"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_facebook_verde" translatesAutoresizingMaskIntoConstraints="NO" id="afV-QF-k6K">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="63" y="279" width="29" height="27"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qd9-4D-4JP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" backgroundImage="lupa">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="136" y="363" width="48" height="48"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cancel:" destination="YYe-Qk-L39" eventType="touchUpInside" id="a1e-10-u2u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.058823529411764705" green="0.11764705882352941" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="qd9-4D-4JP"/>
                                 <exclude reference="jzw-7h-XVo"/>
                                 <exclude reference="jPR-xt-edM"/>
                                 <exclude reference="2c9-0H-Ouk"/>
@@ -304,11 +309,12 @@
                                 <exclude reference="neS-S4-0EA"/>
                                 <exclude reference="fOx-2B-Oat"/>
                                 <exclude reference="Ziw-8k-jgk"/>
+                                <exclude reference="afV-QF-k6K"/>
+                                <exclude reference="qd9-4D-4JP"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="qd9-4D-4JP"/>
                                 <include reference="jzw-7h-XVo"/>
                                 <include reference="jPR-xt-edM"/>
                                 <include reference="2c9-0H-Ouk"/>
@@ -317,6 +323,8 @@
                                 <include reference="neS-S4-0EA"/>
                                 <include reference="fOx-2B-Oat"/>
                                 <include reference="Ziw-8k-jgk"/>
+                                <include reference="afV-QF-k6K"/>
+                                <include reference="qd9-4D-4JP"/>
                             </mask>
                         </variation>
                     </view>
@@ -324,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycG-a2-sWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1550" y="1498"/>
+            <point key="canvasLocation" x="-1551" y="1497.75"/>
         </scene>
         <!--Resultado-->
         <scene sceneID="Lda-Ro-Cpz">
@@ -490,7 +498,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="19" y="65" width="282" height="185"/>
+                                    <rect key="frame" x="20" y="60" width="282" height="141"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5R-Wd-JKB">
@@ -503,6 +511,12 @@
                                     <action selector="cancel:" destination="1wS-Yy-jIA" eventType="touchUpInside" id="ql6-5N-YJ0"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode_selo" translatesAutoresizingMaskIntoConstraints="NO" id="72A-o4-9X0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="60" y="203" width="200" height="200"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.058823529409999999" green="0.1176470588" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -510,6 +524,7 @@
                                 <exclude reference="auT-A2-xHx"/>
                                 <exclude reference="tnZ-zk-7dd"/>
                                 <exclude reference="Z5R-Wd-JKB"/>
+                                <exclude reference="72A-o4-9X0"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -517,6 +532,7 @@
                                 <include reference="auT-A2-xHx"/>
                                 <include reference="tnZ-zk-7dd"/>
                                 <include reference="Z5R-Wd-JKB"/>
+                                <include reference="72A-o4-9X0"/>
                             </mask>
                         </variation>
                     </view>
@@ -586,12 +602,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TN5-Bp-MBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2372" y="1498"/>
+            <point key="canvasLocation" x="-2638.5" y="1497.75"/>
         </scene>
-        <!--Info Page View Controller-->
+        <!--Tutorial1 View Controller-->
         <scene sceneID="ZmV-TV-LkQ">
             <objects>
-                <viewController storyboardIdentifier="page2" id="FdJ-Fb-Lx2" customClass="InfoPageViewController" customModule="appCelularRegistrado" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="page2" id="FdJ-Fb-Lx2" customClass="Tutorial1ViewController" customModule="appCelularRegistrado" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u2o-81-52J"/>
                         <viewControllerLayoutGuide type="bottom" id="lxe-b7-niZ"/>
@@ -609,7 +625,7 @@
                                     <rect key="frame" x="136" y="363" width="48" height="48"/>
                                 </variation>
                                 <connections>
-                                    <action selector="cancel:" destination="WMG-HK-o99" eventType="touchUpInside" id="ckl-u2-z8u"/>
+                                    <action selector="cancel:" destination="FdJ-Fb-Lx2" eventType="touchUpInside" id="h7g-Jy-x0V"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consultar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJc-Bc-Ocp">
@@ -621,6 +637,100 @@
                                     <rect key="frame" x="0.0" y="412" width="320" height="21"/>
                                 </variation>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39z-BG-huO">
+                                <rect key="frame" x="-20" y="18" width="361" height="336"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porque consultar um registro?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K6-t4-tHk">
+                                        <rect key="frame" x="21" y="20" width="320" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="33" y="20" width="247" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça a consulta e reduza o risco de adquirir celulares roubados." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-id-9aZ">
+                                        <rect key="frame" x="20" y="49" width="320" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="20" y="49" width="268" height="49"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evite comprar celulares roubados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weX-g9-gGT">
+                                        <rect key="frame" x="21" y="106" width="320" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="33" y="106" width="235" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antes de adquirir um celular faça a consulta prévia do registro para verificar se há alerta de roubo para o celular." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHb-mQ-ory">
+                                        <rect key="frame" x="21" y="135" width="320" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="21" y="140" width="267" height="56"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confira os dados do proprietário" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoD-to-LRY">
+                                        <rect key="frame" x="21" y="204" width="320" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="33" y="204" width="235" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jks-Zf-aoq">
+                                        <rect key="frame" x="21" y="233" width="320" height="83"/>
+                                        <string key="text">Fazendo a consulta prévia você reduz a chance de adquirir produtos roubados econfirma se quem está negociando com você é o verdadeiro proprietário.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="21" y="233" width="267" height="83"/>
+                                        </variation>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seta" translatesAutoresizingMaskIntoConstraints="NO" id="BR2-nW-ReB">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="13" y="20" width="20" height="20"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seta" translatesAutoresizingMaskIntoConstraints="NO" id="axX-DK-2nw">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="13" y="106" width="20" height="20"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seta" translatesAutoresizingMaskIntoConstraints="NO" id="zGM-m2-YOL">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="13" y="204" width="20" height="20"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529411764705" green="0.11764705882352941" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="BR2-nW-ReB"/>
+                                        <exclude reference="axX-DK-2nw"/>
+                                        <exclude reference="zGM-m2-YOL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="20" width="288" height="336"/>
+                                    <mask key="subviews">
+                                        <include reference="BR2-nW-ReB"/>
+                                        <include reference="axX-DK-2nw"/>
+                                        <include reference="zGM-m2-YOL"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.058823529411764705" green="0.11764705882352941" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -640,7 +750,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haA-cu-4xt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1995" y="1498"/>
+            <point key="canvasLocation" x="-2076" y="1497.75"/>
         </scene>
         <!--Imei Controller-->
         <scene sceneID="7Et-MZ-9e7">
@@ -1034,7 +1144,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="19" y="65" width="282" height="185"/>
+                                    <rect key="frame" x="20" y="60" width="282" height="126"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK1-ua-2CT">
@@ -1047,6 +1157,12 @@
                                     <action selector="cancel:" destination="HU8-Hb-Hn8" eventType="touchUpInside" id="B4A-c6-XHp"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imei" translatesAutoresizingMaskIntoConstraints="NO" id="2A4-Pw-9Kg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="60" y="194" width="200" height="200"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.058823529409999999" green="0.1176470588" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -1054,6 +1170,7 @@
                                 <exclude reference="f4j-mG-a1B"/>
                                 <exclude reference="D6w-54-cg8"/>
                                 <exclude reference="dK1-ua-2CT"/>
+                                <exclude reference="2A4-Pw-9Kg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1061,6 +1178,7 @@
                                 <include reference="f4j-mG-a1B"/>
                                 <include reference="D6w-54-cg8"/>
                                 <include reference="dK1-ua-2CT"/>
+                                <include reference="2A4-Pw-9Kg"/>
                             </mask>
                         </variation>
                     </view>
@@ -1092,17 +1210,6 @@
                                     <rect key="frame" x="0.0" y="20" width="320" height="37"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7s-fI-CBI">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <string key="text">O QR Code é um código de barras bidimensional que serve como um direcionados para URL ou dados, proporcionando maio velocidade
-        no acesso a informações, Sua leitura pode ser realizada por celulares e tablets que possuem APP para leitura de QR Code.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="19" y="65" width="282" height="185"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjW-kk-fud">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" backgroundImage="icon-close"/>
@@ -1113,20 +1220,39 @@
                                     <action selector="cancel:" destination="bpi-fQ-iSm" eventType="touchUpInside" id="LZn-p7-iO5"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selo" translatesAutoresizingMaskIntoConstraints="NO" id="SzE-Oh-iiL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="60" y="210" width="200" height="200"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7s-fI-CBI">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <string key="text">O QR Code é um código de barras bidimensional que serve como um direcionados para URL ou dados, proporcionando maio velocidade
+        no acesso a informações, Sua leitura pode ser realizada por celulares e tablets que possuem APP para leitura de QR Code.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="60" width="282" height="141"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.058823529409999999" green="0.1176470588" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="62Z-IG-GwL"/>
-                                <exclude reference="U7s-fI-CBI"/>
                                 <exclude reference="JjW-kk-fud"/>
+                                <exclude reference="SzE-Oh-iiL"/>
+                                <exclude reference="U7s-fI-CBI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="62Z-IG-GwL"/>
-                                <include reference="U7s-fI-CBI"/>
                                 <include reference="JjW-kk-fud"/>
+                                <include reference="SzE-Oh-iiL"/>
+                                <include reference="U7s-fI-CBI"/>
                             </mask>
                         </variation>
                     </view>
@@ -1143,12 +1269,17 @@
         <image name="bt_qrcode" width="48" height="48"/>
         <image name="bt_tag" width="48" height="48"/>
         <image name="icon-close" width="300" height="300"/>
+        <image name="imei" width="1024" height="1024"/>
         <image name="imei_selected" width="48" height="48"/>
+        <image name="logo_facebook_verde" width="192" height="192"/>
         <image name="logo_marca" width="1024" height="768"/>
         <image name="lupa" width="48" height="48"/>
         <image name="mira" width="400" height="400"/>
         <image name="qrcode_selected" width="48" height="48"/>
+        <image name="qrcode_selo" width="1024" height="1024"/>
         <image name="qrcode_unselected" width="48" height="48"/>
+        <image name="selo" width="1024" height="1024"/>
+        <image name="seta" width="512" height="512"/>
         <image name="tag_selected" width="48" height="48"/>
         <image name="tag_unselected" width="48" height="48"/>
     </resources>

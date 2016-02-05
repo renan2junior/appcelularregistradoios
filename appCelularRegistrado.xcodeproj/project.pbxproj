@@ -29,6 +29,7 @@
 		87EC8D231C5F69FF00D564FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EC8D211C5F69FF00D564FB /* LaunchScreen.storyboard */; };
 		87EC8D2E1C5F6A0000D564FB /* appCelularRegistradoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC8D2D1C5F6A0000D564FB /* appCelularRegistradoTests.swift */; };
 		87EC8D391C5F6A0000D564FB /* appCelularRegistradoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EC8D381C5F6A0000D564FB /* appCelularRegistradoUITests.swift */; };
+		87FD8A111C64CFC000D68B0E /* Tutorial1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD8A101C64CFC000D68B0E /* Tutorial1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		87EC8D341C5F6A0000D564FB /* appCelularRegistradoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appCelularRegistradoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EC8D381C5F6A0000D564FB /* appCelularRegistradoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appCelularRegistradoUITests.swift; sourceTree = "<group>"; };
 		87EC8D3A1C5F6A0000D564FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FD8A101C64CFC000D68B0E /* Tutorial1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial1ViewController.swift; sourceTree = "<group>"; };
 		C80B3D0FF61D5242322C04C6 /* Pods-appCelularRegistrado.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appCelularRegistrado.debug.xcconfig"; path = "Pods/Target Support Files/Pods-appCelularRegistrado/Pods-appCelularRegistrado.debug.xcconfig"; sourceTree = "<group>"; };
 		EBC0EDEDE4B05F72AE747E8E /* Pods-appCelularRegistrado.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appCelularRegistrado.release.xcconfig"; path = "Pods/Target Support Files/Pods-appCelularRegistrado/Pods-appCelularRegistrado.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 				87613DC01C61A317003C8915 /* ResultadoViewController.swift */,
 				87B6B36D1C628057003A7EBB /* TagViewController.swift */,
 				87D29B771C62DF4A00ECB1AE /* ImeiViewController.swift */,
+				87FD8A101C64CFC000D68B0E /* Tutorial1ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				873603D01C62216F002414AA /* JDAvatarProgress.swift in Sources */,
 				87CA10BC1C616E81001E7F95 /* InfoAppViewController.swift in Sources */,
 				87CA10C91C61784D001E7F95 /* ParseModels.swift in Sources */,
+				87FD8A111C64CFC000D68B0E /* Tutorial1ViewController.swift in Sources */,
 				87CA10C41C617739001E7F95 /* Reachability.swift in Sources */,
 				87EC8D191C5F69FF00D564FB /* AppDelegate.swift in Sources */,
 				87B6B36E1C628057003A7EBB /* TagViewController.swift in Sources */,
