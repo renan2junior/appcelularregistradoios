@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 
 import SwiftyJSON
+import PKHUD
 
 class ImeiViewController : UIViewController, UITextFieldDelegate {
     
@@ -43,6 +44,8 @@ class ImeiViewController : UIViewController, UITextFieldDelegate {
     @IBAction func getCelular(sender: AnyObject){
         
         let campo_string: String  = campo_busca.text!
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
         
         if(campo_string.characters.count >= 5) {
             label_sinalizador.backgroundColor = UIColor.greenColor()
@@ -83,7 +86,7 @@ class ImeiViewController : UIViewController, UITextFieldDelegate {
             
         }
         
-        
+        PKHUD.sharedHUD.hide()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

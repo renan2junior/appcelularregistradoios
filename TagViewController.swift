@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import PKHUD
+
 
 import SwiftyJSON
 
@@ -20,6 +22,7 @@ class TagViewController : UIViewController, UITextFieldDelegate {
     @IBOutlet var campo_busca:UITextField!
     @IBOutlet var label_sinalizador:UILabel!
     @IBOutlet var label_sinalizador2:UILabel!
+
     
     
     
@@ -27,7 +30,7 @@ class TagViewController : UIViewController, UITextFieldDelegate {
         
         super.viewDidLoad()
         campo_busca.delegate=self
-    }
+          }
     
     override func viewDidAppear(animated: Bool) {
         
@@ -43,6 +46,8 @@ class TagViewController : UIViewController, UITextFieldDelegate {
     @IBAction func getCelular(sender: AnyObject){
         
         let campo_string: String  = campo_busca.text!
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
         
         if(campo_string.characters.count >= 5) {
             label_sinalizador.backgroundColor = UIColor.greenColor()
@@ -81,6 +86,7 @@ class TagViewController : UIViewController, UITextFieldDelegate {
             alert.show()
             
         }
+         PKHUD.sharedHUD.hide();
         
     }
     

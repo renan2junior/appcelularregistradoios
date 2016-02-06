@@ -87,6 +87,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-appCelularRegistrado/Alamofire.framework"
   install_framework "Pods-appCelularRegistrado/AlamofireImage.framework"
   install_framework "Pods-appCelularRegistrado/JDSwiftAvatarProgress.framework"
+  install_framework "Pods-appCelularRegistrado/PKHUD.framework"
   install_framework "Pods-appCelularRegistrado/QRCodeReader.framework"
   install_framework "Pods-appCelularRegistrado/SwiftyJSON.framework"
 fi
@@ -94,6 +95,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-appCelularRegistrado/Alamofire.framework"
   install_framework "Pods-appCelularRegistrado/AlamofireImage.framework"
   install_framework "Pods-appCelularRegistrado/JDSwiftAvatarProgress.framework"
+  install_framework "Pods-appCelularRegistrado/PKHUD.framework"
   install_framework "Pods-appCelularRegistrado/QRCodeReader.framework"
   install_framework "Pods-appCelularRegistrado/SwiftyJSON.framework"
 fi

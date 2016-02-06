@@ -10,6 +10,8 @@ import UIKit
 import AVFoundation
 
 import SwiftyJSON
+import PKHUD
+
 
 class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDelegate{
     
@@ -130,6 +132,8 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
     
     
     @IBAction func getCelular(sender: AnyObject){
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
         if(Reachability().isConnectedToNetwork()){
             ws.getCelularQRCode(
                 {retorno in
@@ -159,6 +163,7 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
             
         }
         
+        PKHUD.sharedHUD.hide()
         
     }
     
