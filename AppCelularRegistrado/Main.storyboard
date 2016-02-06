@@ -555,6 +555,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alerta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hct-kd-Gga">
                                 <rect key="frame" x="20" y="160" width="280" height="32"/>
+                                <color key="backgroundColor" red="0.31917599327606888" green="0.88818687080536918" blue="0.21943406018434947" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1213,7 +1214,7 @@
         <!--XCode Controller-->
         <scene sceneID="Dx8-TL-zlc">
             <objects>
-                <tabBarController id="AFx-e2-zov" userLabel="XCode Controller" sceneMemberID="viewController">
+                <tabBarController id="AFx-e2-zov" userLabel="XCode Controller" customClass="BaseTabBarController" customModule="appCelularRegistrado" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" itemPositioning="centered" id="VDA-7y-XAa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -1223,6 +1224,11 @@
                         <color key="barTintColor" red="0.094117647060000004" green="0.18039215689999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="XUG-Tp-e7c" kind="relationship" relationship="viewControllers" id="T2h-kC-Eof"/>
                         <segue destination="scl-VK-01Z" kind="relationship" relationship="viewControllers" id="laC-E7-3hh"/>
@@ -1400,7 +1406,7 @@
         <image name="tag_unselected" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="k27-2a-A69"/>
         <segue reference="Egk-Mg-Nc5"/>
+        <segue reference="k27-2a-A69"/>
     </inferredMetricsTieBreakers>
 </document>
