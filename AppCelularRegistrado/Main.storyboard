@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AFx-e2-zov">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AFx-e2-zov">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +25,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBi-cp-pjf">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBi-cp-pjf">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="g1V-yS-chr"/>
@@ -44,13 +45,16 @@
                                         <include reference="n2j-Qd-HhP"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="getCelular:" destination="scl-VK-01Z" eventType="touchUpInside" id="iJt-V1-GeW"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="66" placeholderIntrinsicHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="wij-IF-Kyg">
                                 <rect key="frame" x="160" y="260" width="280" height="243"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpO-e0-wvJ">
                                         <rect key="frame" x="20" y="20" width="240" height="203"/>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.079889105589999995" blue="0.1049436983" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mira" translatesAutoresizingMaskIntoConstraints="NO" id="ZmX-Ay-kwl">
                                         <rect key="frame" x="20" y="20" width="240" height="203"/>
@@ -204,19 +208,10 @@
                                 <exclude reference="FrZ-aM-dRx"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5o1-kD-zbT"/>
-                                <exclude reference="efS-vj-JZD"/>
-                                <exclude reference="OzA-M9-f8Y"/>
-                                <exclude reference="XwJ-l8-8Yy"/>
-                                <exclude reference="aX0-eb-lWc"/>
-                                <exclude reference="Icb-7I-p7B"/>
-                                <exclude reference="u00-Bc-IHu"/>
-                                <exclude reference="xMT-Wm-S6l"/>
+                                <exclude reference="dyc-cr-EY0"/>
                                 <exclude reference="AmD-ch-W5N"/>
                                 <exclude reference="EZa-Rg-dei"/>
                                 <exclude reference="kEG-3i-h1p"/>
-                                <exclude reference="02l-fg-ufF"/>
-                                <exclude reference="8T4-id-WEs"/>
                                 <exclude reference="RO4-xd-7gm"/>
                                 <exclude reference="UY0-vS-GpD"/>
                                 <exclude reference="oSm-49-CKH"/>
@@ -224,7 +219,16 @@
                                 <exclude reference="IDo-Hp-6Nh"/>
                                 <exclude reference="Yft-TO-DU3"/>
                                 <exclude reference="r1V-wT-jQg"/>
-                                <exclude reference="dyc-cr-EY0"/>
+                                <exclude reference="5o1-kD-zbT"/>
+                                <exclude reference="efS-vj-JZD"/>
+                                <exclude reference="Icb-7I-p7B"/>
+                                <exclude reference="u00-Bc-IHu"/>
+                                <exclude reference="xMT-Wm-S6l"/>
+                                <exclude reference="OzA-M9-f8Y"/>
+                                <exclude reference="XwJ-l8-8Yy"/>
+                                <exclude reference="aX0-eb-lWc"/>
+                                <exclude reference="02l-fg-ufF"/>
+                                <exclude reference="8T4-id-WEs"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -244,19 +248,10 @@
                                 <include reference="FrZ-aM-dRx"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="5o1-kD-zbT"/>
-                                <include reference="efS-vj-JZD"/>
-                                <include reference="OzA-M9-f8Y"/>
-                                <include reference="XwJ-l8-8Yy"/>
-                                <include reference="aX0-eb-lWc"/>
-                                <include reference="Icb-7I-p7B"/>
-                                <include reference="u00-Bc-IHu"/>
-                                <include reference="xMT-Wm-S6l"/>
+                                <include reference="dyc-cr-EY0"/>
                                 <include reference="AmD-ch-W5N"/>
                                 <include reference="EZa-Rg-dei"/>
                                 <include reference="kEG-3i-h1p"/>
-                                <include reference="02l-fg-ufF"/>
-                                <include reference="8T4-id-WEs"/>
                                 <include reference="RO4-xd-7gm"/>
                                 <include reference="UY0-vS-GpD"/>
                                 <include reference="oSm-49-CKH"/>
@@ -264,7 +259,16 @@
                                 <include reference="IDo-Hp-6Nh"/>
                                 <include reference="Yft-TO-DU3"/>
                                 <include reference="r1V-wT-jQg"/>
-                                <include reference="dyc-cr-EY0"/>
+                                <include reference="5o1-kD-zbT"/>
+                                <include reference="efS-vj-JZD"/>
+                                <include reference="Icb-7I-p7B"/>
+                                <include reference="u00-Bc-IHu"/>
+                                <include reference="xMT-Wm-S6l"/>
+                                <include reference="OzA-M9-f8Y"/>
+                                <include reference="XwJ-l8-8Yy"/>
+                                <include reference="aX0-eb-lWc"/>
+                                <include reference="02l-fg-ufF"/>
+                                <include reference="8T4-id-WEs"/>
                             </mask>
                         </variation>
                     </view>
@@ -276,6 +280,7 @@
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <connections>
+                        <outlet property="bt_busca" destination="JBi-cp-pjf" id="ITD-yZ-oQa"/>
                         <outlet property="qrCodeFrameView" destination="gpO-e0-wvJ" id="yVO-sp-IOT"/>
                         <outlet property="viewBorder" destination="wij-IF-Kyg" id="l1D-tE-fAp"/>
                         <segue destination="Cku-8Y-KyJ" kind="showDetail" identifier="Resultado" id="LHF-Fs-y6T">
@@ -747,10 +752,10 @@
                                     <rect key="frame" x="0.0" y="412" width="320" height="21"/>
                                 </variation>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39z-BG-huO">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="39z-BG-huO">
                                 <rect key="frame" x="-20" y="18" width="361" height="336"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porque consultar um registro?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K6-t4-tHk">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porque consultar um registro?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K6-t4-tHk">
                                         <rect key="frame" x="21" y="20" width="320" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -759,7 +764,7 @@
                                             <rect key="frame" x="33" y="20" width="247" height="21"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça a consulta e reduza o risco de adquirir celulares roubados." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-id-9aZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faça a consulta e reduza o risco de adquirir celulares roubados." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-id-9aZ">
                                         <rect key="frame" x="20" y="49" width="320" height="49"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -768,7 +773,7 @@
                                             <rect key="frame" x="20" y="49" width="268" height="49"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evite comprar celulares roubados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weX-g9-gGT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evite comprar celulares roubados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weX-g9-gGT">
                                         <rect key="frame" x="21" y="106" width="320" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -777,7 +782,7 @@
                                             <rect key="frame" x="33" y="106" width="235" height="21"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antes de adquirir um celular faça a consulta prévia do registro para verificar se há alerta de roubo para o celular." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHb-mQ-ory">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Antes de adquirir um celular faça a consulta prévia do registro para verificar se há alerta de roubo para o celular." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHb-mQ-ory">
                                         <rect key="frame" x="21" y="135" width="320" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -786,7 +791,7 @@
                                             <rect key="frame" x="21" y="140" width="267" height="56"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confira os dados do proprietário" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoD-to-LRY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confira os dados do proprietário" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoD-to-LRY">
                                         <rect key="frame" x="21" y="204" width="320" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -795,7 +800,7 @@
                                             <rect key="frame" x="33" y="204" width="235" height="21"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jks-Zf-aoq">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jks-Zf-aoq">
                                         <rect key="frame" x="21" y="233" width="320" height="83"/>
                                         <string key="text">Fazendo a consulta prévia você reduz a chance de adquirir produtos roubados econfirma se quem está negociando com você é o verdadeiro proprietário.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -929,13 +934,13 @@
                                     <rect key="frame" x="20" y="89" width="300" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça a leitura e conrme o proprietário, dados do celular e se o celular é roubado." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZh-GV-aE5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulte utilizando utilizando código de série do CELULAR, dados do celular e se o Celular Registrado não é roubado." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZh-GV-aE5">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="107" width="298" height="38"/>
+                                    <rect key="frame" x="20" y="110" width="292" height="46"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lg-Iy-hUS">
@@ -945,7 +950,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="147" width="298" height="30"/>
+                                    <rect key="frame" x="20" y="154" width="298" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="HU8-Hb-Hn8" kind="presentation" id="VgY-Aw-6BF"/>
@@ -958,7 +963,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="26" y="184" width="274" height="30"/>
+                                    <rect key="frame" x="26" y="191" width="274" height="30"/>
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mG-lb-qtU">
@@ -968,7 +973,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="184" width="6" height="30"/>
+                                    <rect key="frame" x="20" y="191" width="6" height="30"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMEI Obrigatória" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uoa-r1-Esp">
@@ -977,7 +982,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="222" width="280" height="21"/>
+                                    <rect key="frame" x="20" y="229" width="280" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -1023,6 +1028,8 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="campo_busca" destination="IXh-WG-xxc" id="BXs-H1-aIj"/>
+                        <outlet property="label_sinalizador" destination="2mG-lb-qtU" id="sDl-rD-Tt7"/>
+                        <outlet property="label_sinalizador2" destination="Uoa-r1-Esp" id="sRM-5y-Tp4"/>
                         <segue destination="Cku-8Y-KyJ" kind="showDetail" id="z08-3s-qdK">
                             <nil key="action"/>
                         </segue>
@@ -1099,13 +1106,13 @@
                                     <rect key="frame" x="20" y="88" width="300" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça a leitura e conrme o proprietário, dados do celular e se o celular é roubado." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGf-oK-xk4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulte utilizando a TAG constante no Selo para conrmar proprietário,dados do celular e se o Celular Registrado não é roubado" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGf-oK-xk4">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="106" width="298" height="38"/>
+                                    <rect key="frame" x="20" y="104" width="298" height="58"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZc-es-zkJ">
@@ -1115,7 +1122,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="146" width="298" height="30"/>
+                                    <rect key="frame" x="20" y="153" width="298" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="bpi-fQ-iSm" kind="presentation" id="1xM-ie-geG"/>
@@ -1128,7 +1135,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="26" y="183" width="274" height="30"/>
+                                    <rect key="frame" x="26" y="190" width="274" height="30"/>
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAG Obrigatória" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDk-Dx-Uv5">
@@ -1137,7 +1144,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="221" width="280" height="21"/>
+                                    <rect key="frame" x="20" y="228" width="280" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HW-mZ-2eg">
@@ -1147,7 +1154,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="183" width="6" height="30"/>
+                                    <rect key="frame" x="20" y="190" width="6" height="30"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -1192,6 +1199,8 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="campo_busca" destination="VcM-fw-M7t" id="AUQ-gw-6YV"/>
+                        <outlet property="label_sinalizador" destination="4HW-mZ-2eg" id="u9T-1C-mI5"/>
+                        <outlet property="label_sinalizador2" destination="CDk-Dx-Uv5" id="AiL-WM-6Ug"/>
                         <segue destination="Cku-8Y-KyJ" kind="showDetail" identifier="Resultado" id="Egk-Mg-Nc5">
                             <nil key="action"/>
                         </segue>
@@ -1248,8 +1257,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6w-54-cg8">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <string key="text">O QR Code é um código de barras bidimensional que serve como um direcionados para URL ou dados, proporcionando maio velocidade
-        no acesso a informações, Sua leitura pode ser realizada por celulares e tablets que possuem APP para leitura de QR Code.</string>
+                                <string key="text">Para localizar o IMEI do aparelho basta digitar *#06# ou verificar em uma etiqueta atrás da bateria. O número consiste de quatro grupos, que segue o padrão: nnnnnn-nn-nnnnnn-n</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1336,10 +1344,8 @@
                                     <rect key="frame" x="60" y="210" width="200" height="200"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7s-fI-CBI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag é um identificador único de um registro armazenado no banco de dados do Celular Registrado." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7s-fI-CBI">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <string key="text">O QR Code é um código de barras bidimensional que serve como um direcionados para URL ou dados, proporcionando maio velocidade
-        no acesso a informações, Sua leitura pode ser realizada por celulares e tablets que possuem APP para leitura de QR Code.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1394,7 +1400,7 @@
         <image name="tag_unselected" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qtK-gb-vHg"/>
-        <segue reference="LHF-Fs-y6T"/>
+        <segue reference="7mS-fH-JAC"/>
+        <segue reference="z08-3s-qdK"/>
     </inferredMetricsTieBreakers>
 </document>
