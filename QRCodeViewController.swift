@@ -10,6 +10,8 @@ import UIKit
 import AVFoundation
 
 import SwiftyJSON
+import PKHUD
+
 
 class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDelegate{
     
@@ -24,6 +26,8 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
     let parse:ParseModels = ParseModels()
     let ws:AppService = AppService()
     var celular:Celular!
+    var campo_busca: String!
+    @IBOutlet weak var bt_busca:UIButton!
     
     
     
@@ -118,41 +122,50 @@ class QRCodeViewController : UIViewController, AVCaptureMetadataOutputObjectsDel
             
             if metadataObj.stringValue != nil {
                 qrCodeNameScan = metadataObj.stringValue
-                print(qrCodeNameScan)
                 captureSession?.stopRunning()
-                if(Reachability().isConnectedToNetwork()){
-                    ws.getCelularQRCode(
-                        {retorno in
-                            self.a = retorno!
-                            self.celular = self.parse.parseCelular(self.a)
-                            if(self.celular != nil && self.celular.imei_celular != "" ){
-                                self.performSegueWithIdentifier("Resultado", sender: self)
-                            }else{
-                                let alert = UIAlertView()
-                                alert.title =  "Atenção"
-                                alert.message = "Celular não encontrado com esse QRCode."
-                                alert.addButtonWithTitle("OK")
-                                alert.show()
-                            }
-
-                            return
-                        }, tipo: qrCodeNameScan!)
-                    
-                } else{
-                    
-                    let alert = UIAlertView()
-                    alert.title =  "Ops!"
-                    alert.message = "Ocorreu um erro de rede."
-                    alert.addButtonWithTitle("OK")
-                    alert.show()
-
-                }
                 
-                
+                self.bt_busca.enabled = true
             }
         }
     }
     
+    
+    
+    @IBAction func getCelular(sender: AnyObject){
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
+        if(Reachability().isConnectedToNetwork()){
+            ws.getCelularQRCode(
+                {retorno in
+                    self.a = retorno!
+                    self.celular = self.parse.parseCelular(self.a)
+                    if(self.celular != nil && self.celular.imei_celular != "" ){
+                        self.bt_busca.enabled = false
+                        self.performSegueWithIdentifier("Resultado", sender: self)
+                    }else{
+                        let alert = UIAlertView()
+                        alert.title =  "Atenção"
+                        alert.message = "Celular não encontrado com esse QRCode."
+                        alert.addButtonWithTitle("OK")
+                        alert.show()
+                    }
+                    
+                    return
+                }, tipo: qrCodeNameScan!)
+            
+        } else{
+            
+            let alert = UIAlertView()
+            alert.title =  "Ops!"
+            alert.message = "Ocorreu um erro de rede."
+            alert.addButtonWithTitle("OK")
+            alert.show()
+            
+        }
+        
+        PKHUD.sharedHUD.hide()
+        
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         

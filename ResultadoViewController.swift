@@ -29,16 +29,17 @@ class ResultadoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+        let verde = UIColor(red: 81/255.0, green: 226/255.0, blue: 56/255.0, alpha: 1.0)
+        
         print(celular?.nome_fabricante!)
         
        
 
         if((celular?.alerta_celular)! == "0"){
             status.text = "Regular"
-            status.textColor = UIColor.greenColor()
+            status.textColor = verde
             alerta.text = "CELULAR REGISTRADO"
-            alerta.backgroundColor = UIColor.greenColor()
+            alerta.backgroundColor = verde
         }else{
             status.textColor = UIColor.redColor()
             status.text = "Roubado"
@@ -65,8 +66,8 @@ class ResultadoViewController: UIViewController {
     private func setUpImageView() {
         let URL = NSURL(string: celular!.imagem_usuario!)!
         avatarImgView.af_setImageWithURL(URL)
-        let red = UIColor(red: 100.0/255.0, green: 130.0/255.0, blue: 230.0/255.0, alpha: 1.0)
-        avatarImgView.layer.borderColor = red.CGColor
+        
+        avatarImgView.layer.borderColor = UIColor.whiteColor().CGColor
         //avatarImgView.layer.borderWidth = 5.0
         self.avatarImgView.layer.cornerRadius = self.avatarImgView.frame.size.width / 2;
         

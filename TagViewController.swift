@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import PKHUD
+
 
 import SwiftyJSON
 
@@ -18,13 +20,17 @@ class TagViewController : UIViewController, UITextFieldDelegate {
     let ws:AppService = AppService()
     var celular:Celular!
     @IBOutlet var campo_busca:UITextField!
+    @IBOutlet var label_sinalizador:UILabel!
+    @IBOutlet var label_sinalizador2:UILabel!
+
+    
     
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         campo_busca.delegate=self
-    }
+          }
     
     override func viewDidAppear(animated: Bool) {
         
@@ -38,30 +44,49 @@ class TagViewController : UIViewController, UITextFieldDelegate {
     
     
     @IBAction func getCelular(sender: AnyObject){
-        if(Reachability().isConnectedToNetwork()){
-            ws.getCelularTag(
-                {retorno in
-                    self.a = retorno!
-                    self.celular = self.parse.parseCelular(self.a)
-                    if(self.celular != nil && self.celular.imei_celular != "" ){
-                        self.performSegueWithIdentifier("Resultado", sender: self)
-                    }else{
-                        let alert = UIAlertView()
-                        alert.title =  "Atenção"
-                        alert.message = "Celular não encontrado com essa TAG."
-                        alert.addButtonWithTitle("OK")
-                        alert.show()
-                    }
-                    return
-                }, tipo: campo_busca.text!)
-        } else{
-            
+        
+        let campo_string: String  = campo_busca.text!
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
+        
+        if(campo_string.characters.count >= 5) {
+            label_sinalizador.backgroundColor = UIColor.greenColor()
+            label_sinalizador2.textColor = UIColor.greenColor()
+            if(Reachability().isConnectedToNetwork()){
+                ws.getCelularTag(
+                    {retorno in
+                        self.a = retorno!
+                        self.celular = self.parse.parseCelular(self.a)
+                        if(self.celular != nil && self.celular.imei_celular != "" ){
+                            self.performSegueWithIdentifier("Resultado", sender: self)
+                        }else{
+                            let alert = UIAlertView()
+                            alert.title =  "Atenção"
+                            alert.message = "Celular não encontrado com essa TAG."
+                            alert.addButtonWithTitle("OK")
+                            alert.show()
+                        }
+                        return
+                    }, tipo: campo_busca.text!)
+            } else{
+                
+                let alert = UIAlertView()
+                alert.title =  "Ops!"
+                alert.message = "Ocorreu um erro de rede."
+                alert.addButtonWithTitle("OK")
+                alert.show()
+            }
+        }else{
+            label_sinalizador.backgroundColor = UIColor.redColor()
+            label_sinalizador2.textColor = UIColor.redColor()
             let alert = UIAlertView()
             alert.title =  "Ops!"
-            alert.message = "Ocorreu um erro de rede."
+            alert.message = "Campo deve conter 5 caracteres."
             alert.addButtonWithTitle("OK")
             alert.show()
+            
         }
+         PKHUD.sharedHUD.hide();
         
     }
     
